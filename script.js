@@ -100,7 +100,7 @@ Vue.component('table-entry', {
   props: ['name', 'engine', 'releaseDate', 'imgId', 'yt'],
   template: `<tr>
     <td>{{name}}</td>
-    <td><img :src="'img/' + imgId + '.jpg'" class="screenshot" :onClick="openImg(imgId)"/></td>
+    <td><img :src="'img/small/' + imgId + '.jpg'" class="screenshot" :onClick="openImg(imgId)"/></td>
     <td><engine-link :name=engine></engine-link></td>
     <td>{{generateDateFormat(releaseDate)}}</td>
     <td><a :href="'https://www.youtube.com/watch?v='+yt" target="_blank"><i class="fa fa-youtube-play fa-6" aria-hidden="true"></i></a></td>
@@ -195,7 +195,7 @@ function setImageModal (toOn, src) {
   if (toOn) {
     console.log(src)
     modal.className = 'modal is-active'
-    img.src = 'img/' + src + '.jpg'
+    img.src = 'img/full/' + src + '.jpg'
   } else {
     modal.className = 'modal'
   }
