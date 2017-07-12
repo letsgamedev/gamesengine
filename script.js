@@ -147,6 +147,7 @@ Vue.component('engine-link', {
         case PHASERJS: return 'https://phaser.io/'
         case COCOS2D: return 'http://cocos2d.org/'
         case RED_ENGINE: return 'https://en.wikipedia.org/wiki/REDengine'
+        case CONSTRUCT2: return 'https://www.scirra.com/'
 
         default: return 'http://lets-gamedev.de/help/'
       }
