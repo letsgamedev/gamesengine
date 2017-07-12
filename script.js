@@ -149,6 +149,8 @@ Vue.component('engine-link', {
         case RED_ENGINE: return 'https://en.wikipedia.org/wiki/REDengine'
         case LWJGL: return 'https://www.lwjgl.org/'
         case CONSTRUCT2: return 'https://www.scirra.com/'
+        case CTF: return 'http://www.clickteam.com/clickteam-fusion-2-5'
+        case RV4: return 'https://arma3.com/features/engine'
         default: return 'http://lets-gamedev.de/help/'
       }
     }
