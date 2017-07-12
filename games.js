@@ -41,7 +41,6 @@ var CRYENGINEV = 'CryEngine V'
 var CTF = 'Clickteam Fusion 2.5'
 var RV4 = 'Real Virtuality 4'
 var SOURCE = 'Source Engine'
-var GWE = 'Guild Wars game engine'
 
 
 GAMES = [
@@ -75,5 +74,5 @@ GAMES = [
       {name: 'Snipperclips', engine: UNITY, releaseDate: {d: 3, m: 3, y: 2017}, imgId: 'snipperclips', yt: 'FAol5oItb2E'}, // https://en.wikipedia.org/wiki/Snipperclips
       {name: 'Firewatch', engine: UNITY, releaseDate: {d: 9, m: 2, y: 2016}, imgId: 'firewatch', yt: 'd02lhvvVSy8'}, // https://madewith.unity.com/en/games/firewatch
       {name: 'Blobcat', engine: UNITY, releaseDate: {d: 10, m: 3, y: 2017}, imgId: 'blobcat', yt: 'mszlI5CcpQo'}, // https://www.youtube.com/watch?v=LI0r2jh8UAo
-	  {name: 'Guild Wars 2', engine: GWE, releaseDate: {d: 28, m: 08, y: 2012}, imgId: 'gw2', yt: 'rinOhAev_5k'}
+	  {name: 'Guild Wars 2', engine: OWN_ENGINE, releaseDate: {d: 28, m: 08, y: 2012}, imgId: 'gw2', yt: 'rinOhAev_5k'}
 ]
