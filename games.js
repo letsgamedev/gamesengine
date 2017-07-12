@@ -21,6 +21,7 @@ imgId: Der Name des dementsprechenden Bildes im 'img/' order der Seite
 
 // ENGINES
 var UNREAL4 = 'Unreal Engine 4'
+var UNREAL3 = 'Unreal Engine 3'
 var UNITY = 'Unity'
 var XNA = 'Microsoft XNA'
 var GAME_MAKER1 = 'Game Maker Studio'
@@ -30,9 +31,15 @@ var FROSTBITE = 'Frostbite'
 var OWN_ENGINE = 'Own Engine'
 var PHASERJS = 'Phaser.js'
 var COCOS2D = 'Cocos2D'
+var RED_ENGINE = 'REDengine 2/3/4'
 
 GAMES = [
       {name: 'Dauntless', engine: UNREAL4, releaseDate: {q: 4, y: 2017}, imgId: 'dauntless', yt: 'xOMq_luhZoA'},
+      {name: 'Nidhogg', engine: GAME_MAKER1, releaseDate: {d: 13, m: 1, y: 2014}, imgId: 'nidhogg', yt: 'TaOocHXMhlU'},
       {name: 'Yooka-Laylee', engine: UNITY, releaseDate: {d: 11, m: 4, y: 2017}, imgId: 'yooka-laylee', yt: 'R57JwzXartU'},
-      {name: 'Stardew Valley', engine: XNA, releaseDate: {d: 26, m: 2, y: 2016}, imgId: 'stardew-valley', yt: 'ot7uXNQskhs'}
+      {name: 'Stardew Valley', engine: XNA, releaseDate: {d: 26, m: 2, y: 2016}, imgId: 'stardew-valley', yt: 'ot7uXNQskhs'},
+      {name: 'Undertale', engine: GAME_MAKER1, releaseDate: {d: 15, m: 9, y: 2015}, imgId: 'undertale', yt: '1Hojv0m3TqA'},
+      {name: 'Life is Strange', engine: UNREAL3, releaseDate: {d: 30, m: 1, y: 2015}, imgId: 'life-is-strange', yt: 'YznXuKwJtMg'},
+      {name: 'The Forest', engine: UNITY, releaseDate: {d: 30, m: 5, y: 2014}, imgId: 'the-forest', yt: '4qTtVMM3uqQ'},
+      {name: 'The Witcher 3', engine: RED_ENGINE, releaseDate: {d: 19, m: 5, y: 2015}, imgId: 'witcher3', yt: 'tDfa1Qp2SwA'}
 ]

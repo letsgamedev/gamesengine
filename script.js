@@ -1,13 +1,13 @@
 
 Vue.component('game-table', {
-  props: ['data', 'head'],
+  props: ['data', 'head', 'filterKey'],
   template: `
   <table class="table">
         <thead><tr>
-          <th v-for="key in head" v-html="key"></th>
+          <th v-for="key in head" @click="sortBy(key)" :class="{active: sortKey == key}" v-html="key"></th>
         </tr></thead>
         <tbody>
-            <table-entry v-for="entry in data" 
+            <table-entry v-for="entry in filteredData" 
             :name="entry.name" 
             :engine="entry.engine" 
             :releaseDate="entry.releaseDate" 
@@ -18,7 +18,81 @@ Vue.component('game-table', {
       </table>
         `,
 
+  data: function () {
+    var sortOrders = {}
+    this.head.forEach(function (key) {
+      sortOrders[key] = 1
+    })
+    return {
+      sortKey: '',
+      sortOrders: sortOrders
+    }
+  },
+
   methods: {
+    sortBy: function (key) {
+      this.sortKey = key
+      this.sortOrders[key] = this.sortOrders[key] * -1
+    }
+  },
+
+  computed: {
+    filteredData: function () {
+      console.log('new calx')
+      var sortKey = this.sortKey.toLowerCase() || 'name'
+      var filterKey = this.filterKey && this.filterKey.toLowerCase()
+      var order = this.sortOrders[this.sortKey] || 1
+      var data = this.data
+      /* if (filterKey) {
+        data = data.filter(function (row) {
+          return Object.keys(row).some(function (key) {
+            return String(row[key]).toLowerCase().indexOf(filterKey) > -1
+          })
+        })
+      } */
+      console.log(data, sortKey)
+      var alphaSort = function (a, b) {
+        a = a[sortKey]
+        b = b[sortKey]
+        return (a === b ? 0 : a > b ? 1 : -1) * order
+      }
+
+      var dateSort = function (a, b) {
+        var trans = function (date) {
+          var d = 0
+          var m = 0
+          var y = 0
+          console.log('hui', date)
+          if (date.hasOwnProperty('q')) {
+            d = 31
+            switch (date.q) {
+              case '1': m = 3; break
+              case '2': m = 6; break
+              case '3': m = 9; break
+              case '4': m = 12; break
+            }
+            y = date.y
+          } else {
+            d = date.d
+            m = date.m
+            y = date.y
+          }
+
+          return y + (m < 10 ? '0' + m : m) + (d < 10 ? '0' + d : d)
+        }
+        var at = trans(a.releaseDate)
+        var bt = trans(b.releaseDate)
+        console.log(at, bt)
+        return (at === bt ? 0 : at > bt ? 1 : -1) * order
+      }
+
+      switch (sortKey) {
+        case 'release': data = data.slice().sort(dateSort); break
+        case 'screen shot': data = data; break
+        default: data = data.slice().sort(alphaSort)
+      }
+      return data
+    }
   }
 })
 
@@ -36,7 +110,7 @@ Vue.component('table-entry', {
   methods: {
 
     openImg (src) {
-      return 'setImageModal(true,' + src + ')'
+      return 'setImageModal(true,"' + src + '")'
     },
 
     generateDateFormat (v) {
@@ -63,6 +137,7 @@ Vue.component('engine-link', {
       switch (v) {
         case UNITY: return 'https://unity3d.com'
         case UNREAL4: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
+        case UNREAL3: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
         case XNA: return 'https://en.wikipedia.org/wiki/Microsoft_XNA'
         case GAME_MAKER1: return 'https://www.yoyogames.com/'
         case GAME_MAKER2: return 'https://www.yoyogames.com/'
@@ -71,6 +146,7 @@ Vue.component('engine-link', {
         case OWN_ENGINE: return ''
         case PHASERJS: return 'https://phaser.io/'
         case COCOS2D: return 'http://cocos2d.org/'
+        case RED_ENGINE: return 'https://en.wikipedia.org/wiki/REDengine'
 
         default: return 'http://lets-gamedev.de/help/'
       }
@@ -117,6 +193,7 @@ function setImageModal (toOn, src) {
   var modal = document.getElementById('imgModal')
   var img = modal.getElementsByTagName('img')[0]
   if (toOn) {
+    console.log(src)
     modal.className = 'modal is-active'
     img.src = 'img/' + src + '.jpg'
   } else {
