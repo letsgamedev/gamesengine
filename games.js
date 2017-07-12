@@ -46,5 +46,6 @@ GAMES = [
       {name: 'Crysis', engine: CRY_ENGINE, releaseDate: {d: 16, m: 11, y: 2007}, imgId: 'crysis', yt: 'eNDP-xLuOxM'}, //Trailer auf English
       {name: 'Crysis 2', engine: CRY_ENGINE, releaseDate: {d: 24, m: 3, y: 2011}, imgId: 'crysis2', yt: 'dmGAfgv9uPo'}, //Trailer auf English
       {name: 'Crysis 3', engine: CRY_ENGINE, releaseDate: {d: 21, m: 2, y: 2013}, imgId: 'crysis3', yt: 'g5NNkyDt65w'}, //Trailer auf English
-      {name: 'Borderlands', engine: UNREAL3, releaseDate: {d: 30, m: 10, y: 2009}, imgId: 'borderlands', yt: 'DfR95_5v-hU'}
+      {name: 'Borderlands', engine: UNREAL3, releaseDate: {d: 30, m: 10, y: 2009}, imgId: 'borderlands', yt: 'DfR95_5v-hU'},
+      {name: 'Borderlands 2', engine: UNREAL3, releaseDate: {d: 18, m: 11, y: 2015}, imgId: 'borderlands2', yt: 'nNaNK1Pp1g4'}
 ]
