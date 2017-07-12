@@ -60,7 +60,6 @@ Vue.component('game-table', {
           var d = 0
           var m = 0
           var y = 0
-          console.log('hui', date)
           if (date.hasOwnProperty('q')) {
             d = 31
             switch (date.q) {
@@ -76,7 +75,7 @@ Vue.component('game-table', {
             y = date.y
           }
 
-          return y + (m < 10 ? '0' + m : m) + (d < 10 ? '0' + d : d)
+          return '' + y + (m < 10 ? '0' + m : m) + (d < 10 ? '0' + d : d)
         }
         var at = trans(a.releaseDate)
         var bt = trans(b.releaseDate)
