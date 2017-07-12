@@ -152,6 +152,7 @@ Vue.component('engine-link', {
         case CTF: return 'http://www.clickteam.com/clickteam-fusion-2-5'
         case RV4: return 'https://arma3.com/features/engine'
         case CRYENGINE: return 'https://www.cryengine.com/'
+        case SOURCE: return 'https://de.wikipedia.org/wiki/Source_Engine' 
         default: return 'http://lets-gamedev.de/help/'
       }
     }
