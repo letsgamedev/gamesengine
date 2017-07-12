@@ -38,7 +38,6 @@ Vue.component('game-table', {
 
   computed: {
     filteredData: function () {
-      console.log('new calx')
       var sortKey = this.sortKey.toLowerCase() || 'name'
       var filterKey = this.filterKey && this.filterKey.toLowerCase()
       var order = this.sortOrders[this.sortKey] || 1
@@ -50,7 +49,6 @@ Vue.component('game-table', {
           })
         })
       } */
-      console.log(data, sortKey)
       var alphaSort = function (a, b) {
         a = a[sortKey]
         b = b[sortKey]
@@ -151,8 +149,11 @@ Vue.component('engine-link', {
         case CONSTRUCT2: return 'https://www.scirra.com/'
         case CTF: return 'http://www.clickteam.com/clickteam-fusion-2-5'
         case RV4: return 'https://arma3.com/features/engine'
-        case CRYENGINE: return 'https://www.cryengine.com/'
-        case SOURCE: return 'https://de.wikipedia.org/wiki/Source_Engine' 
+        case CRYENGINE1: return 'https://www.cryengine.com/'
+        case CRYENGINE2: return 'https://www.cryengine.com/'
+        case CRYENGINE3: return 'https://www.cryengine.com/'
+        case CRYENGINEV: return 'https://www.cryengine.com/'
+        case SOURCE: return 'https://de.wikipedia.org/wiki/Source_Engine'
         default: return 'http://lets-gamedev.de/help/'
       }
     }
