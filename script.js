@@ -61,9 +61,17 @@ Vue.component('engine-link', {
   methods: {
     getLink (v) {
       switch (v) {
-        case 'Unity': return 'https://unity3d.com'
-        case 'Unreal Engine 4': return 'https://www.unrealengine.com/what-is-unreal-engine-4'
-        case 'Microsoft_XNA': return 'https://en.wikipedia.org/wiki/Microsoft_XNA'
+        case UNITY: return 'https://unity3d.com'
+        case UNREAL4: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
+        case XNA: return 'https://en.wikipedia.org/wiki/Microsoft_XNA'
+        case GAME_MAKER1: return 'https://www.yoyogames.com/'
+        case GAME_MAKER2: return 'https://www.yoyogames.com/'
+        case GODOT: return 'https://godotengine.org/'
+        case FROSTBITE: return 'https://www.ea.com/frostbite'
+        case OWN_ENGINE: return ''
+        case PHASERJS: return 'https://phaser.io/'
+        case COCOS2D: return 'http://cocos2d.org/'
+
         default: return 'http://lets-gamedev.de/help/'
       }
     }
@@ -101,11 +109,7 @@ var app = new Vue({
 
     head: ['Name', 'Screen Shot', 'Engine', 'Release', '<span class="icon"><i class="fa fa-youtube-play"></i></span>'],
 
-    games: [
-      {name: 'Dauntless', engine: ' Unreal Engine 4', releaseDate: {q: 4, y: 2017}, imgId: '1', yt: 'xOMq_luhZoA'},
-      {name: 'Yooka-Laylee', engine: 'Unity', releaseDate: {d: 11, m: 4, y: 2017}, imgId: '2', yt: 'R57JwzXartU'},
-      {name: 'Stardew Valley', engine: 'Microsoft XNA', releaseDate: {d: 26, m: 2, y: 2016}, imgId: '3', yt: 'ot7uXNQskhs'}
-    ]
+    games: GAMES
   }
 })
 
