@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Games Engine</title>
+	<meta charset="utf-8">
+	<script src="https://use.fontawesome.com/9b6a41aa13.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css" />
+		<script src="vue.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="root">
+		<h1 class="title is-1 headLine">Games Engine</h1>
+		<div class="title is-3">{{l.de.instruction}}</div>
+		<game-table :data="games" :head="head"></game-table>
+		<image-modal></image-modal>
+	</div>
+	
+	<footer>© tom bleek <span class="icon"><a href="http://lets-gamedev.de/" target="_blank"><i class="fa fa-home"></i></a></span></footer>
+
+	<a href="https://www.patreon.com/bePatron?u=2503538" target="_blank"><img class="patreon" src="img/patreon.png"/></a>
+
+<script src="script.js"></script>
+</body>
+</html>

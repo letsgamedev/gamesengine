@@ -1,0 +1,45 @@
+body {
+	   margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.headLine {
+	color: red;
+}
+
+.modal-content {
+	width: 80%;
+}
+
+.patreon {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: 180px;
+
+	border-bottom: solid 0px black; 
+
+	transition: all 0,5s;
+}
+.patreon:hover {
+	top: 18px;
+	border-bottom: solid 2px black; 
+}
+
+td {
+	vertical-align: middle !important;
+}
+
+a {
+	color: red !important;
+}
+
+.screenshot {
+	height: 100px;
+}
+
+html {
+	    max-width: 1000px;
+    margin: auto;
+}
