@@ -43,7 +43,7 @@ GAMES = [
       {name: 'Life is Strange', engine: UNREAL3, releaseDate: {d: 30, m: 1, y: 2015}, imgId: 'life-is-strange', yt: 'YznXuKwJtMg'},
       {name: 'The Forest', engine: UNITY, releaseDate: {d: 30, m: 5, y: 2014}, imgId: 'the-forest', yt: '4qTtVMM3uqQ'},
       {name: 'The Witcher 3', engine: RED_ENGINE, releaseDate: {d: 19, m: 5, y: 2015}, imgId: 'witcher3', yt: 'tDfa1Qp2SwA'},
-      {name: 'Crysis', engine: CRY_ENGINE, releaseDate: {d: 16, m: 11, y: 2007}, imgId: 'crysis', yt: 'q11NZDhv__A'}, //Trailer auf English und Für PS3/XBOX360 Version des Spiels
+      {name: 'Crysis', engine: CRY_ENGINE, releaseDate: {d: 16, m: 11, y: 2007}, imgId: 'crysis', yt: 'eNDP-xLuOxM'}, //Trailer auf English
       {name: 'Crysis 2', engine: CRY_ENGINE, releaseDate: {d: 24, m: 3, y: 2011}, imgId: 'crysis2', yt: 'dmGAfgv9uPo'}, //Trailer auf English
       {name: 'Crysis 3', engine: CRY_ENGINE, releaseDate: {d: 21, m: 2, y: 2013}, imgId: 'crysis3', yt: 'g5NNkyDt65w'} //Trailer auf English
 ]
