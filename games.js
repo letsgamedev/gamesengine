@@ -32,6 +32,7 @@ var OWN_ENGINE = 'Own Engine'
 var PHASERJS = 'Phaser.js'
 var COCOS2D = 'Cocos2D'
 var RED_ENGINE = 'REDengine 2/3/4'
+var CRY_ENGINE = 'CryEngine'
 
 GAMES = [
       {name: 'Dauntless', engine: UNREAL4, releaseDate: {q: 4, y: 2017}, imgId: 'dauntless', yt: 'xOMq_luhZoA'},
