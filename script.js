@@ -148,7 +148,7 @@ Vue.component('engine-link', {
         case COCOS2D: return 'http://cocos2d.org/'
         case RED_ENGINE: return 'https://en.wikipedia.org/wiki/REDengine'
         case LWJGL: return 'https://www.lwjgl.org/'
-
+        case CONSTRUCT2: return 'https://www.scirra.com/'
         default: return 'http://lets-gamedev.de/help/'
       }
     }
