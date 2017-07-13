@@ -42,13 +42,18 @@ Vue.component('game-table', {
       var filterKey = this.filterKey && this.filterKey.toLowerCase()
       var order = this.sortOrders[this.sortKey] || 1
       var data = this.data
-      /* if (filterKey) {
+      if (filterKey) {
         data = data.filter(function (row) {
           return Object.keys(row).some(function (key) {
-            return String(row[key]).toLowerCase().indexOf(filterKey) > -1
+            if (key === "releaseDate") {
+              return generateDateFormat(row[key]).indexOf(filterKey) > -1
+            } else {
+              return String(row[key]).toLowerCase().indexOf(filterKey) > -1
+            }
+            
           })
         })
-      } */
+      } 
       var alphaSort = function (a, b) {
         a = a[sortKey]
         b = b[sortKey]
@@ -110,7 +115,7 @@ Vue.component('table-entry', {
       return 'setImageModal(true,"' + src + '")'
     },
 
-    generateDateFormat (v) {
+    /*generateDateFormat (v) {
       if (v.hasOwnProperty('q')) {
         return 'Q' + v.q + ' ' + v.y
       } else {
@@ -119,7 +124,7 @@ Vue.component('table-entry', {
         var y = v.y
         return d + '.' + m + '.' + y
       }
-    }
+    }*/
   }
 })
 
@@ -191,6 +196,8 @@ var app = new Vue({
       }
     },
 
+    searchQuery: '',
+
     head: ['Name', 'Screen Shot', 'Engine', 'Release', '<span class="icon"><i class="fa fa-youtube-play"></i></span>'],
 
     games: GAMES
@@ -206,5 +213,16 @@ function setImageModal (toOn, src) {
     img.src = 'img/full/' + src + '.jpg'
   } else {
     modal.className = 'modal'
+  }
+}
+
+function generateDateFormat (v) {
+  if (v.hasOwnProperty('q')) {
+    return 'Q' + v.q + ' ' + v.y
+  } else {
+    var d = v.d < 10 ? '0' + v.d : v.d
+    var m = v.m < 10 ? '0' + v.m : v.m
+    var y = v.y
+    return d + '.' + m + '.' + y
   }
 }

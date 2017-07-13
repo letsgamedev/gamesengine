@@ -4,6 +4,10 @@ body {
     margin-top: 50px;
 }
 
+.searchbar {
+	margin-bottom: 10px;
+}
+
 .headLine {
 	color: red;
 }

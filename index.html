@@ -14,7 +14,8 @@
 	<div id="root">
 		<h1 class="title is-1 headLine">Games Engine</h1>
 		<div class="title is-3">{{l.de.instruction}}</div>
-		<game-table :data="games" :head="head"></game-table>
+		<input name="query" v-model="searchQuery" placeholder="search" class="input searchbar">
+		<game-table :data="games" :head="head" :filter-key="searchQuery"></game-table>
 		<image-modal></image-modal>
 	</div>
 	
