@@ -159,6 +159,8 @@ Vue.component('engine-link', {
         case UNREAL3: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
         case UNREAL4: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
         case XNA: return 'https://en.wikipedia.org/wiki/Microsoft_XNA'
+        case COBRA_ENGINE: return 'https://www.frontier.co.uk/node/639'
+        case DIESEL: return 'https://en.wikipedia.org/wiki/Diesel_(game_engine)'
         default: return 'http://lets-gamedev.de/help/'
       }
     }
