@@ -54,6 +54,7 @@ var J_MONKEY_ENGINE = 'jMonkeyEngine'
 GAMES = [
       {name: 'Rising World', engine:  J_MONKEY_ENGINE, releaseDate: {d: 3, m: 12, y: 2014}, imgId: 'rising-world', yt: 'tVgVr7IN4lo'},// http://store.steampowered.com/app/324080/Rising_World/
       {name: 'Portal', engine: SOURCE, releaseDate: {d: 9, m: 10, y: 2007}, imgId: 'portal', yt: 'TluRVBhmf8w'},
+	  {name: 'Portal 2', engine: SOURCE, releaseDate: {d: 19, m: 4, y: 2011}, imgId: 'portal2', yt: 'tax4e4hBBZc'},
       {name: 'Dauntless', engine: UNREAL4, releaseDate: {q: 4, y: 2017}, imgId: 'dauntless', yt: 'xOMq_luhZoA'},
       {name: 'Nidhogg', engine: GAME_MAKER1, releaseDate: {d: 13, m: 1, y: 2014}, imgId: 'nidhogg', yt: 'TaOocHXMhlU'},
       {name: 'Yooka-Laylee', engine: UNITY, releaseDate: {d: 11, m: 4, y: 2017}, imgId: 'yooka-laylee', yt: 'R57JwzXartU'},
@@ -73,7 +74,7 @@ GAMES = [
       {name: 'Minecraft', engine: LWJGL, releaseDate: {d: 17, m: 5, y: 2009}, imgId: 'minecraft', yt: 'MmB9b5njVbA'},
   	   {name: 'Super Ubie Island', engine: CONSTRUCT2, releaseDate: {d: 15, m: 1, y: 2016}, imgId: 'superubieisland', yt: 'd41yEc3CGoQ'},
 	   {name: 'Far Cry', engine: CRYENGINE1, releaseDate: {d: 23, m: 3, y: 2004}, imgId: 'farcry', yt: '_rFi_FdtJ6k'},
-      {name: 'The Escapist', engine: CTF, releaseDate: {d: 13, m: 2, y: 2015}, imgId: 'The-Escapists', yt: 'ixeHjuPKlUU'}, // https://community.clickteam.com/content/224-The-Escapists-Kickstarter-Launched
+      {name: 'The Escapists', engine: CTF, releaseDate: {d: 13, m: 2, y: 2015}, imgId: 'The-Escapists', yt: 'ixeHjuPKlUU'}, // https://community.clickteam.com/content/224-The-Escapists-Kickstarter-Launched
       {name: 'Arma 3', engine: RV4, releaseDate: {d: 12, m: 9, y: 2013}, imgId: 'arma3', yt: 'M1YBZUxMX8g'}, // https://arma3.com/features/engine
       {name: 'Argo', engine: RV4, releaseDate: {d: 22, m: 6, y: 2017}, imgId: 'argo', yt: '459VNYwtuS4'}, // Basiert auf Arma 3
       {name: 'Playerunknown\'s Battlegrounds', engine: UNREAL4, releaseDate: {d: 23, m: 3, y: 2017}, imgId: 'PUBG', yt: 'ODWCbu_cuqk'},
@@ -107,4 +108,5 @@ GAMES = [
       {name: 'Dota 2', engine: SOURCE2, releaseDate: {d: 9, m: 7, y: 2013}, imgId: 'dota-2', yt: '-cSFPIwMEq4'}, // https://de.wikipedia.org/wiki/Dota_2
       {name: 'Project CARS', engine: MADNESS, releaseDate: {d: 7, m: 5, y: 2015}, imgId: 'pcars', yt: 'DQIbUBbNGd0'},
       {name: 'Overwatch', engine: OWN_ENGINE, releaseDate: {d: 24, m: 05, y: 2016}, imgId: 'overwatch', yt: 'FqnKB22pOC0'},
+	  {name: 'Terraria', engine: XNA, releaseDate: {d: 16, m: 5, y: 2011}, imgId: 'terraria', yt: '-nXdtDgpPeE'}
 ]
