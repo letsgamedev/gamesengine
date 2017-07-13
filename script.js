@@ -42,6 +42,7 @@ Vue.component('game-table', {
       var filterKey = this.filterKey && this.filterKey.toLowerCase()
       var order = this.sortOrders[this.sortKey] || 1
       var data = this.data
+      setAllButtonDisabled(!filterKey)
       if (filterKey) {
         data = data.filter(function (row) {
           return Object.keys(row).some(function (key) {
@@ -113,18 +114,7 @@ Vue.component('table-entry', {
 
     openImg (src) {
       return 'setImageModal(true,"' + src + '")'
-    },
-
-    /*generateDateFormat (v) {
-      if (v.hasOwnProperty('q')) {
-        return 'Q' + v.q + ' ' + v.y
-      } else {
-        var d = v.d < 10 ? '0' + v.d : v.d
-        var m = v.m < 10 ? '0' + v.m : v.m
-        var y = v.y
-        return d + '.' + m + '.' + y
-      }
-    }*/
+    }
   }
 })
 
@@ -216,6 +206,10 @@ function setImageModal (toOn, src) {
   }
 }
 
+function setAllButtonDisabled(isDisabled) {
+  document.getElementById('all-button').disabled = isDisabled
+}
+
 function generateDateFormat (v) {
   if (v.hasOwnProperty('q')) {
     return 'Q' + v.q + ' ' + v.y
@@ -225,4 +219,8 @@ function generateDateFormat (v) {
     var y = v.y
     return d + '.' + m + '.' + y
   }
+}
+
+function seeAllGames() {
+  app.searchQuery = ''
 }

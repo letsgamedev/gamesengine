@@ -14,7 +14,14 @@
 	<div id="root">
 		<h1 class="title is-1 headLine">Games Engine</h1>
 		<div class="title is-3">{{l.de.instruction}}</div>
-		<input name="query" v-model="searchQuery" placeholder="search" class="input searchbar">
+		<div class="columns">
+			<div class="column">
+				<button id="all-button" class="button is-danger" disabled onClick="seeAllGames()">See all</button>
+			</div>
+			<div class="column is-11">
+			  <input name="query" v-model="searchQuery" placeholder="search" class="input searchbar">
+			</div>
+		</div>
 		<game-table :data="games" :head="head" :filter-key="searchQuery"></game-table>
 		<image-modal></image-modal>
 	</div>
