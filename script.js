@@ -151,6 +151,9 @@ Vue.component('engine-link', {
         case SERIOUS4: return 'http://www.croteam.com/technology/'
         case LIBGDX: return 'https://libgdx.badlogicgames.com/'
         case MONOGAME: return 'http://www.monogame.net/'
+        case LUMBERYARD: return 'https://aws.amazon.com/de/lumberyard/'
+        case CREATION_ENGINE: return 'https://en.wikipedia.org/wiki/Creation_Engine'
+        case MADNESS: return 'http://www.slightlymadstudios.com/tech.html'
         default: return 'http://lets-gamedev.de/help/'
       }
     }

@@ -41,9 +41,13 @@ var CRYENGINEV = 'CryEngine V'
 var CTF = 'Clickteam Fusion 2.5'
 var RV4 = 'Real Virtuality 4'
 var SOURCE = 'Source Engine'
+var SOURCE2 = 'Source 2'
 var SERIOUS4 = 'Serious Engine 4' // http://www.croteam.com/technology/
 var LIBGDX = 'LibGDX' // https://libgdx.badlogicgames.com/
 var MONOGAME = 'MonoGame' // http://www.monogame.net/
+var LUMBERYARD = "Lumberyard Engine"
+var CREATION_ENGINE = 'Creation-Engine'
+var MADNESS = "MADNESS Engine"
 
 
 GAMES = [
@@ -65,8 +69,8 @@ GAMES = [
       {name: 'The Witcher 3', engine: RED_ENGINE, releaseDate: {d: 19, m: 5, y: 2015}, imgId: 'witcher3', yt: 'tDfa1Qp2SwA'},
       {name: 'Super Mario Run', engine: UNITY, releaseDate: {d: 15, m: 12, y: 2016}, imgId: 'mario-run', yt: 'wSL56aLy8BI'},
       {name: 'Minecraft', engine: LWJGL, releaseDate: {d: 17, m: 5, y: 2009}, imgId: 'minecraft', yt: 'MmB9b5njVbA'},
-  	  {name: 'Super Ubie Island', engine: CONSTRUCT2, releaseDate: {d: 15, m: 1, y: 2016}, imgId: 'superubieisland', yt: 'd41yEc3CGoQ'},
-	    {name: 'Far Cry', engine: CRYENGINE1, releaseDate: {d: 23, m: 3, y: 2004}, imgId: 'farcry', yt: '_rFi_FdtJ6k'},
+  	   {name: 'Super Ubie Island', engine: CONSTRUCT2, releaseDate: {d: 15, m: 1, y: 2016}, imgId: 'superubieisland', yt: 'd41yEc3CGoQ'},
+	   {name: 'Far Cry', engine: CRYENGINE1, releaseDate: {d: 23, m: 3, y: 2004}, imgId: 'farcry', yt: '_rFi_FdtJ6k'},
       {name: 'The Escapist', engine: CTF, releaseDate: {d: 13, m: 2, y: 2015}, imgId: 'The-Escapists', yt: 'ixeHjuPKlUU'}, // https://community.clickteam.com/content/224-The-Escapists-Kickstarter-Launched
       {name: 'Arma 3', engine: RV4, releaseDate: {d: 12, m: 9, y: 2013}, imgId: 'arma3', yt: 'M1YBZUxMX8g'}, // https://arma3.com/features/engine
       {name: 'Argo', engine: RV4, releaseDate: {d: 22, m: 6, y: 2017}, imgId: 'argo', yt: '459VNYwtuS4'}, // Basiert auf Arma 3
@@ -77,7 +81,7 @@ GAMES = [
       {name: 'Snipperclips', engine: UNITY, releaseDate: {d: 3, m: 3, y: 2017}, imgId: 'snipperclips', yt: 'FAol5oItb2E'}, // https://en.wikipedia.org/wiki/Snipperclips
       {name: 'Firewatch', engine: UNITY, releaseDate: {d: 9, m: 2, y: 2016}, imgId: 'firewatch', yt: 'd02lhvvVSy8'}, // https://madewith.unity.com/en/games/firewatch
       {name: 'Blobcat', engine: UNITY, releaseDate: {d: 10, m: 3, y: 2017}, imgId: 'blobcat', yt: 'mszlI5CcpQo'}, // https://www.youtube.com/watch?v=LI0r2jh8UAo
-	    {name: 'Guild Wars 2', engine: OWN_ENGINE, releaseDate: {d: 28, m: 08, y: 2012}, imgId: 'gw2', yt: 'rinOhAev_5k'},
+	   {name: 'Guild Wars 2', engine: OWN_ENGINE, releaseDate: {d: 28, m: 08, y: 2012}, imgId: 'gw2', yt: 'rinOhAev_5k'},
       {name: 'The Talos Principle', engine: SERIOUS4, releaseDate: {d: 11, m: 12, y: 2014}, imgId: 'the-talos-principle', yt: 'iAVh4_wnOIw'}, // https://de.wikipedia.org/wiki/The_Talos_Principle
       {name: 'Dragon Quest XI (PS4)', engine: UNREAL4, releaseDate: {d: 29, m: 7, y: 2017}, imgId: 'dqxi', yt: 'xkntKOgnaTg'}, // https://en.wikipedia.org/wiki/Dragon_Quest_XI
       {name: 'Distance', engine: UNITY, releaseDate: {d: 9, m: 12, y: 2014}, imgId: 'distance', yt: '6IWDTeuukfc'}, // https://www.kickstarter.com/projects/refract/distance-a-next-generation-arcade-racer - Absatz "So, What's New in the Game?"
@@ -85,5 +89,20 @@ GAMES = [
       {name: 'Fast Racing Neo', engine: OWN_ENGINE, releaseDate: {d: 10, m: 12, y: 2015}, imgId: 'fast-racing-neo', yt: 'jaoeNkimAUM'}, // http://nintendoenthusiast.com/blog/2014/04/03/fast-racing-neo-art-balance-using-shinens-2nd-gen-wii-u-engine/
       {name: 'Ingress', engine: LIBGDX, releaseDate: {d: 15, m: 11, y: 2012}, imgId: 'ingress', yt: 'Y6-JAm3NCAk'}, // https://www.quora.com/Which-game-development-framework-is-used-to-develop-Google-Ingress-game-and-why
       {name: 'Delver', engine: LIBGDX, releaseDate: {d: 7, m: 9, y: 2013}, imgId: 'delver', yt: 'vasYOKf8SVE'}, // http://delver.wikia.com/wiki/Delver_Alpha_Version_History
-      {name: 'Axiom Verge', engine: MONOGAME, releaseDate: {d: 31, m: 3, y: 2015}, imgId: 'axiom-verge', yt: 'AVX8RjtJ7YQ'} // https://twitter.com/AxiomVerge/status/742484496893628416
+      {name: 'Axiom Verge', engine: MONOGAME, releaseDate: {d: 31, m: 3, y: 2015}, imgId: 'axiom-verge', yt: 'AVX8RjtJ7YQ'}, // https://twitter.com/AxiomVerge/status/742484496893628416
+      { name: 'Borderlands 2', engine: UNREAL3, releaseDate: { d: 18, m: 9, y: 2012 }, imgId: 'borland2', yt: '5TW0wJTFLiw' },
+      { name: 'Cities: Skylines', engine: UNITY, releaseDate: { d: 10, m: 3, y: 2015 }, imgId: 'skylines', yt: 'CpWe03NhXKs' },
+      { name: 'Rocket League', engine: UNREAL3, releaseDate: { d: 7, m: 7, y: 2015 }, imgId: 'rocketl', yt: 'Vawwy2eu5sA' },
+      {name: 'Deus Ex GO', engine: UNITY, releaseDate: {d: 18, m: 8, y: 2016}, imgId: 'dxgo', yt: 'TbvVA1yeSUA'},    
+      {name: 'Superhot', engine: UNITY, releaseDate: {d: 25, m: 2, y: 2016}, imgId: 'superhot', yt: 'JYAUlPMqnKk'},
+      {name: 'Hearthstone: Heroes of Warcraft', engine: UNITY, releaseDate: {d: 11, m: 3, y: 2014}, imgId: 'hearthstone', yt: '4y1-wBdkKfA'},
+      {name: 'The Elder Scrolls V: Skyrim', engine: CREATION_ENGINE, releaseDate: {d: 11, m: 11, y: 2011}, imgId: 'skyrim', yt: 'JSRtYpNRoN0'},
+      {name: 'Fallout 4', engine: CREATION_ENGINE, releaseDate: {d: 10, m: 11, y: 2015}, imgId: 'fallout4', yt: 'GE2BkLqMef4'},
+      {name: 'Ark: Survival Evolved', engine: UNREAL4, releaseDate: {d: 3, m: 6, y: 2015}, imgId: 'arkse', yt: 'ajOU9qycJTI'},
+      {name: 'Counter-Strike: Global Offensive', engine: SOURCE, releaseDate: {d: 12, m: 8, y: 2012}, imgId: 'counter-strike-global-offensive', yt: 'edYCtaNueQY'}, // https://de.wikipedia.org/wiki/Counter-Strike:_Global_Offensive
+      {name: 'Counter-Strike: Source', engine: SOURCE, releaseDate: {d: 1, m: 11, y: 2004}, imgId: 'counter-strike-source', yt: 'bvI62FUDpKA'}, // https://de.wikipedia.org/wiki/Counter-Strike:_Source
+      {name: 'Team Fortress 2', engine: SOURCE, releaseDate: {d: 10, m: 10, y: 2007}, imgId: 'team-fortress-2', yt: 'h_c3iQImXZg'}, // https://de.wikipedia.org/wiki/Team_Fortress_2
+      {name: 'Dota 2', engine: SOURCE2, releaseDate: {d: 9, m: 7, y: 2013}, imgId: 'dota-2', yt: '-cSFPIwMEq4'}, // https://de.wikipedia.org/wiki/Dota_2
+      {name: 'Project CARS', engine: MADNESS, releaseDate: {d: 7, m: 5, y: 2015}, imgId: 'pcars', yt: 'DQIbUBbNGd0'},
+      {name: 'Overwatch', engine: OWN_ENGINE, releaseDate: {d: 24, m: 05, y: 2016}, imgId: 'overwatch', yt: 'FqnKB22pOC0'},
 ]
