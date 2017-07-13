@@ -52,6 +52,10 @@ var J_MONKEY_ENGINE = 'jMonkeyEngine'
 
 
 GAMES = [
+	{name: 'Mass Effect: Andromeda', engine: FROSTBITE, releaseDate: {d: 23, m: 3, y: 2017}, imgId: 'MEAndromeda', yt: '4Q5gea3iS40'}
+	{name: 'Mass Effect', engine: UNREAL3, releaseDate: {d: 16, m: 11, y: 2007}, imgId: 'ME1', yt: '-_6ZMr2bMco'}
+	{name: 'Mass Effect 2', engine: UNREAL3, releaseDate: {d: 26, m: 1, y: 2010}, imgId: 'ME2', yt: 'L5c05XSGp5w'}
+	{name: 'Mass Effect 3', engine: UNREAL3, releaseDate: {d: 6, m: 3, y: 2012}, imgId: 'ME3', yt: 'Hhcd_GlgpYY'} 
       {name: 'Rising World', engine:  J_MONKEY_ENGINE, releaseDate: {d: 3, m: 12, y: 2014}, imgId: 'rising-world', yt: 'tVgVr7IN4lo'},// http://store.steampowered.com/app/324080/Rising_World/
       {name: 'Portal', engine: SOURCE, releaseDate: {d: 9, m: 10, y: 2007}, imgId: 'portal', yt: 'TluRVBhmf8w'},
       {name: 'Dauntless', engine: UNREAL4, releaseDate: {q: 4, y: 2017}, imgId: 'dauntless', yt: 'xOMq_luhZoA'},
