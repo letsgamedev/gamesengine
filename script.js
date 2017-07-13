@@ -153,6 +153,9 @@ Vue.component('engine-link', {
         case CRYENGINE3: return 'https://www.cryengine.com/'
         case CRYENGINEV: return 'https://www.cryengine.com/'
         case SOURCE: return 'https://de.wikipedia.org/wiki/Source_Engine'
+        case SERIOUS4: return 'http://www.croteam.com/technology/'
+        case LIBGDX: return 'https://libgdx.badlogicgames.com/'
+        case MONOGAME: return 'http://www.monogame.net/'
         default: return 'http://lets-gamedev.de/help/'
       }
     }
