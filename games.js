@@ -33,6 +33,7 @@ var GAME_MAKER1 = 'Game Maker Studio'
 var GAME_MAKER2 = 'Game Maker Studio 2'
 var GAMEBRYO = 'Gamebryo'
 var GODOT = 'Godot'
+var GOLD_SRC = 'GoldSrc'
 var J_MONKEY_ENGINE = 'jMonkeyEngine'
 var LIBGDX = 'LibGDX'
 var LUMBERYARD = "Lumberyard Engine"
@@ -51,6 +52,7 @@ var UNREAL2_5= 'Unreal Engine 2.5'
 var UNREAL3 = 'Unreal Engine 3'
 var UNREAL4 = 'Unreal Engine 4'
 var XNA = 'Microsoft XNA'
+
 
 
 
@@ -86,7 +88,7 @@ GAMES = [
   {name: 'Argo', engine: REAL_VIRTUALITY_4, releaseDate: {d: 22, m: 6, y: 2017}, imgId: 'argo', yt: '459VNYwtuS4'}, // Basiert auf Arma 3
   {name: 'Playerunknown\'s Battlegrounds', engine: UNREAL4, releaseDate: {d: 23, m: 3, y: 2017}, imgId: 'PUBG', yt: 'ODWCbu_cuqk'},
   {name: 'Avorion', engine: OWN_ENGINE, releaseDate: {d: 23, m: 1, y: 2017}, imgId: 'avorion', yt: 'PfhIAmnC9kY'}, // https://www.avorion.net/forum/index.php/topic,57.msg306.html?PHPSESSID=jatgosd1226p6nhufid2r5ieu7#msg306
-  {name: 'Half-Life', engine: SOURCE, releaseDate: {d: 8, m: 11, y: 1998}, imgId: 'hl1', yt: '5Wavn29LMrs'},
+  {name: 'Half-Life', engine: GOLD_SRC, releaseDate: {d: 8, m: 11, y: 1998}, imgId: 'hl1', yt: '5Wavn29LMrs'},
   {name: 'Half-Life 2', engine: SOURCE, releaseDate: {d: 16, m: 11, y: 2004}, imgId: 'hl2', yt: 'S2CSjTa8Jrc'},
   {name: 'Snipperclips', engine: UNITY, releaseDate: {d: 3, m: 3, y: 2017}, imgId: 'snipperclips', yt: 'FAol5oItb2E'}, // https://en.wikipedia.org/wiki/Snipperclips
   {name: 'Firewatch', engine: UNITY, releaseDate: {d: 9, m: 2, y: 2016}, imgId: 'firewatch', yt: 'd02lhvvVSy8'}, // https://madewith.unity.com/en/games/firewatch
@@ -120,5 +122,6 @@ GAMES = [
   {name: 'Bioshock Infinite', engine: UNREAL3, releaseDate: {d: 26,m: 3, y: 2013}, imgId: 'bioshock_infinite', yt: 'bLHW78X1XeE'},
   {name: 'Fallout 3', engine: GAMEBRYO, releaseDate: {d: 28,m: 10, y: 2008}, imgId: 'fallout3', yt: 'O7a1GVlC9SM'},
   {name: 'Fallout: New Vegas', engine: GAMEBRYO, releaseDate: {d: 19,m: 10, y: 2010}, imgId: 'fallout_nv', yt: 'W_-6ymuk9i4'}, 
-  {name: 'Terraria', engine: XNA, releaseDate: {d: 16, m: 5, y: 2011}, imgId: 'terraria', yt: '-nXdtDgpPeE'}
+  {name: 'Terraria', engine: XNA, releaseDate: {d: 16, m: 5, y: 2011}, imgId: 'terraria', yt: '-nXdtDgpPeE'},
+  {name: 'Gunslugs 2', engine: LIBGDX, releaseDate: {d: 14, m: 1, y: 2015}, imgId: 'gunslugs2', yt: 'BxL8HIPMcFA'}
 ]
