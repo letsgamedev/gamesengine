@@ -52,6 +52,8 @@ var UNREAL2_5= 'Unreal Engine 2.5'
 var UNREAL3 = 'Unreal Engine 3'
 var UNREAL4 = 'Unreal Engine 4'
 var XNA = 'Microsoft XNA'
+var COBRA_ENGINE = 'Cobra'
+var DIESEL = 'Diesel'
 
 
 
@@ -123,5 +125,15 @@ GAMES = [
   {name: 'Fallout 3', engine: GAMEBRYO, releaseDate: {d: 28,m: 10, y: 2008}, imgId: 'fallout3', yt: 'O7a1GVlC9SM'},
   {name: 'Fallout: New Vegas', engine: GAMEBRYO, releaseDate: {d: 19,m: 10, y: 2010}, imgId: 'fallout_nv', yt: 'W_-6ymuk9i4'}, 
   {name: 'Terraria', engine: XNA, releaseDate: {d: 16, m: 5, y: 2011}, imgId: 'terraria', yt: '-nXdtDgpPeE'},
-  {name: 'Gunslugs 2', engine: LIBGDX, releaseDate: {d: 14, m: 1, y: 2015}, imgId: 'gunslugs2', yt: 'BxL8HIPMcFA'}
+  {name: 'Gunslugs 2', engine: LIBGDX, releaseDate: {d: 14, m: 1, y: 2015}, imgId: 'gunslugs2', yt: 'BxL8HIPMcFA'},
+  {name: 'Pokemon GO', engine: UNITY, releaseDate: {d: 6, m: 7, y: 2016}, imgId: 'pokemon_go', yt: '2sj2iQyBTQs'}, //https://www.youtube.com/watch?v=8hru629dkRY
+  {name: 'Planet Coaster', engine: COBRA_ENGINE, releaseDate: {d: 17, m: 11, y: 2016}, imgId: 'planet_coaster', yt: 'QDqlXGg394k'}, //https://de.wikipedia.org/wiki/Planet_Coaster
+  {name: 'Elite: Dangerous', engine: COBRA_ENGINE, releaseDate: {d: 16, m: 12, y: 2014}, imgId: 'elite_dangerous', yt: 'YESNObZJTgQ'},
+  {name: 'Ori and the Blind Forest', engine: UNITY, releaseDate: {d: 11, m: 3, y: 2015}, imgId: 'ori_and_the_blind_forest', yt: 'cklw-Yu3moE'}, //https://de.wikipedia.org/wiki/Ori_and_the_Blind_Forest
+  {name: 'Ori and the Will of the Wisps', engine: UNITY, releaseDate: {q: 2, y: 2018}, imgId: 'ori_and_the_will_of_the_wisps', yt: '2kPSl2vyu2Y'}, //Releasedate is not really known yet, would be nice to have a case for this
+  {name: 'PAYDAY: The Heist', engine: DIESEL, releaseDate: {d: 20, m: 10, y: 2011}, imgId: 'payday_the_heist', yt: 'o9PGpkZNQKg'},
+  {name: 'PAYDAY 2', engine: DIESEL, releaseDate: {d: 13, m: 8, y: 2013}, imgId: 'payday_2', yt: 'Gb-_DKC6wc4'},
+  {name: 'PREY', engine: CRYENGINE3, releaseDate: {d: 5, m: 5, y: 2017}, imgId: 'prey_2017', yt: '1hKTZGflqrc'},
+  {name: 'Rust', engine: UNITY, releaseDate: {d: 11, m: 12, y: 2013}, imgId: 'rust', yt: 'gcvDUxdmntw'},
+  {name: 'Subnautica', engine: UNITY, releaseDate: {d: 16, m: 12, y: 2014}, imgId: 'subnautica', yt: '_7BzngvURrk'}
 ]
