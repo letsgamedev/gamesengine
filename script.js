@@ -127,7 +127,7 @@ Vue.component('engine-link', {
   methods: {
     getLink (v) {
       switch (v) {
-                case CLICK_TEAM_FUSION: return 'http://www.clickteam.com/clickteam-fusion-2-5'
+        case CLICK_TEAM_FUSION: return 'http://www.clickteam.com/clickteam-fusion-2-5'
         case COCOS2D: return 'http://cocos2d.org/'
         case CONSTRUCT2: return 'https://www.scirra.com/'
         case CREATION_ENGINE: return 'https://en.wikipedia.org/wiki/Creation_Engine'
@@ -135,6 +135,7 @@ Vue.component('engine-link', {
         case CRYENGINE2: return 'https://www.cryengine.com/'
         case CRYENGINE3: return 'https://www.cryengine.com/'
         case CRYENGINEV: return 'https://www.cryengine.com/'
+        case DIESEL: return 'https://en.wikipedia.org/wiki/Diesel_(game_engine)'
         case FROSTBITE: return 'https://www.ea.com/frostbite'
         case GAME_MAKER1: return 'https://www.yoyogames.com/'
         case GAME_MAKER2: return 'https://www.yoyogames.com/'
@@ -152,7 +153,7 @@ Vue.component('engine-link', {
         case REAL_VIRTUALITY_4: return 'https://arma3.com/features/engine'
         case RED_ENGINE: return 'https://en.wikipedia.org/wiki/REDengine'
         case SERIOUS4: return 'http://www.croteam.com/technology/'
-        case SOURCE: return 'https://de.wikipedia.org/wiki/Source_Engine'
+        case SOURCE: return 'https://developer.valvesoftware.com/wiki/SDK_Docs'
         case SOURCE2: return 'http://de.valve.wikia.com/wiki/Source_2_Engine'
         case UNITY: return 'https://unity3d.com'
         case UNREAL2_5: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
