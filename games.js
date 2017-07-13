@@ -27,7 +27,7 @@ var XNA = 'Microsoft XNA'
 var GAME_MAKER1 = 'Game Maker Studio'
 var GAME_MAKER2 = 'Game Maker Studio 2'
 var GODOT = 'Godot'
-var FROSTBITE = 'Frostbite'   // https://www.ea.com/frostbite/games tbc
+var FROSTBITE = 'Frostbite'
 var OWN_ENGINE = 'Own Engine'
 var PHASERJS = 'Phaser.js'
 var COCOS2D = 'Cocos2D'
@@ -42,15 +42,17 @@ var CTF = 'Clickteam Fusion 2.5'
 var RV4 = 'Real Virtuality 4'
 var SOURCE = 'Source Engine'
 var SOURCE2 = 'Source 2'
-var SERIOUS4 = 'Serious Engine 4' // http://www.croteam.com/technology/
-var LIBGDX = 'LibGDX' // https://libgdx.badlogicgames.com/
-var MONOGAME = 'MonoGame' // http://www.monogame.net/
+var SERIOUS4 = 'Serious Engine 4'
+var LIBGDX = 'LibGDX'
+var MONOGAME = 'MonoGame'
 var LUMBERYARD = "Lumberyard Engine"
 var CREATION_ENGINE = 'Creation-Engine'
 var MADNESS = "MADNESS Engine"
+var J_MONKEY_ENGINE = 'jMonkeyEngine'
 
 
 GAMES = [
+      {name: 'Rising World', engine:  J_MONKEY_ENGINE, releaseDate: {d: 3, m: 12, y: 2014}, imgId: 'rising-world', yt: 'tVgVr7IN4lo'},// http://store.steampowered.com/app/324080/Rising_World/
       {name: 'Portal', engine: SOURCE, releaseDate: {d: 9, m: 10, y: 2007}, imgId: 'portal', yt: 'TluRVBhmf8w'},
       {name: 'Dauntless', engine: UNREAL4, releaseDate: {q: 4, y: 2017}, imgId: 'dauntless', yt: 'xOMq_luhZoA'},
       {name: 'Nidhogg', engine: GAME_MAKER1, releaseDate: {d: 13, m: 1, y: 2014}, imgId: 'nidhogg', yt: 'TaOocHXMhlU'},

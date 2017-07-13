@@ -154,6 +154,7 @@ Vue.component('engine-link', {
         case LUMBERYARD: return 'https://aws.amazon.com/de/lumberyard/'
         case CREATION_ENGINE: return 'https://en.wikipedia.org/wiki/Creation_Engine'
         case MADNESS: return 'http://www.slightlymadstudios.com/tech.html'
+        case J_MONKEY_ENGINE: return 'http://jmonkeyengine.org/'
         default: return 'http://lets-gamedev.de/help/'
       }
     }
