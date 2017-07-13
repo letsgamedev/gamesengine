@@ -20,37 +20,38 @@ imgId: Der Name des dementsprechenden Bildes im 'img/' order der Seite
 */
 
 // ENGINES
-var UNREAL4 = 'Unreal Engine 4'
-var UNREAL3 = 'Unreal Engine 3'
-var UNREAL2_5= 'Unreal Engine 2.5'
-var UNITY = 'Unity'
-var XNA = 'Microsoft XNA'
-var GAME_MAKER1 = 'Game Maker Studio'
-var GAME_MAKER2 = 'Game Maker Studio 2'
-var GODOT = 'Godot'
-var FROSTBITE = 'Frostbite'
-var OWN_ENGINE = 'Own Engine'
-var PHASERJS = 'Phaser.js'
+var CLICK_TEAM_FUSION = 'Clickteam Fusion 2.5'
 var COCOS2D = 'Cocos2D'
-var RED_ENGINE = 'REDengine 2/3/4'
-var LWJGL = 'LWJGL'
 var CONSTRUCT2 = 'Construct 2'
+var CREATION_ENGINE = 'Creation-Engine'
 var CRYENGINE1 = 'CryEngine 1'
 var CRYENGINE2 = 'CryEngine 2'
 var CRYENGINE3 = 'CryEngine 3'
 var CRYENGINEV = 'CryEngine V'
-var CTF = 'Clickteam Fusion 2.5'
-var RV4 = 'Real Virtuality 4'
+var FROSTBITE = 'Frostbite'
+var GAME_MAKER1 = 'Game Maker Studio'
+var GAME_MAKER2 = 'Game Maker Studio 2'
+var GAMEBRYO = 'Gamebryo'
+var GODOT = 'Godot'
+var J_MONKEY_ENGINE = 'jMonkeyEngine'
+var LIBGDX = 'LibGDX'
+var LUMBERYARD = "Lumberyard Engine"
+var LWJGL = 'LWJGL'
+var MADNESS = "MADNESS Engine"
+var MONOGAME = 'MonoGame'
+var OWN_ENGINE = 'Own Engine'
+var PHASERJS = 'Phaser.js'
+var REAL_VIRTUALITY_4 = 'Real Virtuality 4'
+var RED_ENGINE = 'REDengine 2/3/4'
+var SERIOUS4 = 'Serious Engine 4'
 var SOURCE = 'Source Engine'
 var SOURCE2 = 'Source 2'
-var SERIOUS4 = 'Serious Engine 4'
-var LIBGDX = 'LibGDX'
-var MONOGAME = 'MonoGame'
-var LUMBERYARD = "Lumberyard Engine"
-var CREATION_ENGINE = 'Creation-Engine'
-var MADNESS = "MADNESS Engine"
-var J_MONKEY_ENGINE = 'jMonkeyEngine'
-var GAMEBRYO = 'Gamebryo'
+var UNITY = 'Unity'
+var UNREAL2_5= 'Unreal Engine 2.5'
+var UNREAL3 = 'Unreal Engine 3'
+var UNREAL4 = 'Unreal Engine 4'
+var XNA = 'Microsoft XNA'
+
 
 
 GAMES = [
@@ -80,9 +81,9 @@ GAMES = [
   {name: 'Minecraft', engine: LWJGL, releaseDate: {d: 17, m: 5, y: 2009}, imgId: 'minecraft', yt: 'MmB9b5njVbA'},
   {name: 'Super Ubie Island', engine: CONSTRUCT2, releaseDate: {d: 15, m: 1, y: 2016}, imgId: 'superubieisland', yt: 'd41yEc3CGoQ'},
   {name: 'Far Cry', engine: CRYENGINE1, releaseDate: {d: 23, m: 3, y: 2004}, imgId: 'farcry', yt: '_rFi_FdtJ6k'},
-  {name: 'The Escapist', engine: CTF, releaseDate: {d: 13, m: 2, y: 2015}, imgId: 'The-Escapists', yt: 'ixeHjuPKlUU'}, // https://community.clickteam.com/content/224-The-Escapists-Kickstarter-Launched
-  {name: 'Arma 3', engine: RV4, releaseDate: {d: 12, m: 9, y: 2013}, imgId: 'arma3', yt: 'M1YBZUxMX8g'}, // https://arma3.com/features/engine
-  {name: 'Argo', engine: RV4, releaseDate: {d: 22, m: 6, y: 2017}, imgId: 'argo', yt: '459VNYwtuS4'}, // Basiert auf Arma 3
+  {name: 'The Escapist', engine: CLICK_TEAM_FUSION, releaseDate: {d: 13, m: 2, y: 2015}, imgId: 'The-Escapists', yt: 'ixeHjuPKlUU'}, // https://community.clickteam.com/content/224-The-Escapists-Kickstarter-Launched
+  {name: 'Arma 3', engine: REAL_VIRTUALITY_4, releaseDate: {d: 12, m: 9, y: 2013}, imgId: 'arma3', yt: 'M1YBZUxMX8g'}, // https://arma3.com/features/engine
+  {name: 'Argo', engine: REAL_VIRTUALITY_4, releaseDate: {d: 22, m: 6, y: 2017}, imgId: 'argo', yt: '459VNYwtuS4'}, // Basiert auf Arma 3
   {name: 'Playerunknown\'s Battlegrounds', engine: UNREAL4, releaseDate: {d: 23, m: 3, y: 2017}, imgId: 'PUBG', yt: 'ODWCbu_cuqk'},
   {name: 'Avorion', engine: OWN_ENGINE, releaseDate: {d: 23, m: 1, y: 2017}, imgId: 'avorion', yt: 'PfhIAmnC9kY'}, // https://www.avorion.net/forum/index.php/topic,57.msg306.html?PHPSESSID=jatgosd1226p6nhufid2r5ieu7#msg306
   {name: 'Half-Life', engine: SOURCE, releaseDate: {d: 8, m: 11, y: 1998}, imgId: 'hl1', yt: '5Wavn29LMrs'},
