@@ -54,27 +54,32 @@ var GAMEBRYO = 'Gamebryo'
 
 
 GAMES = [
-      {name: 'Rising World', engine:  J_MONKEY_ENGINE, releaseDate: {d: 3, m: 12, y: 2014}, imgId: 'rising-world', yt: 'tVgVr7IN4lo'},// http://store.steampowered.com/app/324080/Rising_World/
-      {name: 'Portal', engine: SOURCE, releaseDate: {d: 9, m: 10, y: 2007}, imgId: 'portal', yt: 'TluRVBhmf8w'},
-      {name: 'Dauntless', engine: UNREAL4, releaseDate: {q: 4, y: 2017}, imgId: 'dauntless', yt: 'xOMq_luhZoA'},
-      {name: 'Nidhogg', engine: GAME_MAKER1, releaseDate: {d: 13, m: 1, y: 2014}, imgId: 'nidhogg', yt: 'TaOocHXMhlU'},
-      {name: 'Yooka-Laylee', engine: UNITY, releaseDate: {d: 11, m: 4, y: 2017}, imgId: 'yooka-laylee', yt: 'R57JwzXartU'},
-      {name: 'Stardew Valley', engine: XNA, releaseDate: {d: 26, m: 2, y: 2016}, imgId: 'stardew-valley', yt: 'ot7uXNQskhs'},
-      {name: 'Undertale', engine: GAME_MAKER1, releaseDate: {d: 15, m: 9, y: 2015}, imgId: 'undertale', yt: '1Hojv0m3TqA'},
-      {name: 'Life is Strange', engine: UNREAL3, releaseDate: {d: 30, m: 1, y: 2015}, imgId: 'life-is-strange', yt: 'YznXuKwJtMg'},
-      {name: 'The Forest', engine: UNITY, releaseDate: {d: 30, m: 5, y: 2014}, imgId: 'the-forest', yt: '4qTtVMM3uqQ'},
-      {name: 'Star Wars Battlefront', engine: FROSTBITE, releaseDate: {d: 17, m: 11, y: 2011}, imgId: 'battlefront', yt: 'ZwWLns7-xN8'},
-      {name: 'Battlefield 3', engine: FROSTBITE, releaseDate: {d: 25, m: 10, y: 2011}, imgId: 'battlefield-3', yt: 'UIUJh2mA8vg'},
-      {name: 'Battlefield 4', engine: FROSTBITE, releaseDate: {d: 29, m: 10, y: 2013}, imgId: 'battlefield-4', yt: 'sclTMEd7JN8'},
-      {name: 'Battlefield 1', engine: FROSTBITE, releaseDate: {d: 21, m: 10, y: 2016}, imgId: 'battlefield-1', yt: 'c7nRTF2SowQ'},
-      {name: 'Crysis 1', engine: CRYENGINE1, releaseDate: {d: 16, m: 11, y: 2007}, imgId: 'crysis-1', yt: '4YMdZnb2Zyo'},
-      {name: 'Crysis 2', engine: CRYENGINE2, releaseDate: {d: 22, m: 3, y: 2011}, imgId: 'crysis-2', yt: 'Xa1NvpiwqQk'},
-      {name: 'Crysis 3', engine: CRYENGINE3, releaseDate: {d: 19, m: 2, y: 2013}, imgId: 'crysis-3', yt: 'ax5qX6HyB-o'},
+	{name: 'Mass Effect: Andromeda', engine: FROSTBITE, releaseDate: {d: 23, m: 3, y: 2017}, imgId: 'MEAndromeda', yt: '4Q5gea3iS40'}
+	{name: 'Mass Effect', engine: UNREAL3, releaseDate: {d: 16, m: 11, y: 2007}, imgId: 'ME1', yt: '-_6ZMr2bMco'}
+	{name: 'Mass Effect 2', engine: UNREAL3, releaseDate: {d: 26, m: 1, y: 2010}, imgId: 'ME2', yt: 'L5c05XSGp5w'}
+	{name: 'Mass Effect 3', engine: UNREAL3, releaseDate: {d: 6, m: 3, y: 2012}, imgId: 'ME3', yt: 'Hhcd_GlgpYY'} 
+  {name: 'Rising World', engine:  J_MONKEY_ENGINE, releaseDate: {d: 3, m: 12, y: 2014}, imgId: 'rising-world', yt: 'tVgVr7IN4lo'},// http://store.steampowered.com/app/324080/Rising_World/
+  {name: 'Portal', engine: SOURCE, releaseDate: {d: 9, m: 10, y: 2007}, imgId: 'portal', yt: 'TluRVBhmf8w'},
+	{name: 'Portal 2', engine: SOURCE, releaseDate: {d: 19, m: 4, y: 2011}, imgId: 'portal2', yt: 'tax4e4hBBZc'},
+  {name: 'Dauntless', engine: UNREAL4, releaseDate: {q: 4, y: 2017}, imgId: 'dauntless', yt: 'xOMq_luhZoA'},
+  {name: 'Nidhogg', engine: GAME_MAKER1, releaseDate: {d: 13, m: 1, y: 2014}, imgId: 'nidhogg', yt: 'TaOocHXMhlU'},
+  {name: 'Yooka-Laylee', engine: UNITY, releaseDate: {d: 11, m: 4, y: 2017}, imgId: 'yooka-laylee', yt: 'R57JwzXartU'},
+  {name: 'Stardew Valley', engine: XNA, releaseDate: {d: 26, m: 2, y: 2016}, imgId: 'stardew-valley', yt: 'ot7uXNQskhs'},
+  {name: 'Undertale', engine: GAME_MAKER1, releaseDate: {d: 15, m: 9, y: 2015}, imgId: 'undertale', yt: '1Hojv0m3TqA'},
+  {name: 'Life is Strange', engine: UNREAL3, releaseDate: {d: 30, m: 1, y: 2015}, imgId: 'life-is-strange', yt: 'YznXuKwJtMg'},
+  {name: 'The Forest', engine: UNITY, releaseDate: {d: 30, m: 5, y: 2014}, imgId: 'the-forest', yt: '4qTtVMM3uqQ'},
+  {name: 'Star Wars Battlefront', engine: FROSTBITE, releaseDate: {d: 17, m: 11, y: 2011}, imgId: 'battlefront', yt: 'ZwWLns7-xN8'},
+  {name: 'Battlefield 3', engine: FROSTBITE, releaseDate: {d: 25, m: 10, y: 2011}, imgId: 'battlefield-3', yt: 'UIUJh2mA8vg'},
+  {name: 'Battlefield 4', engine: FROSTBITE, releaseDate: {d: 29, m: 10, y: 2013}, imgId: 'battlefield-4', yt: 'sclTMEd7JN8'},
+  {name: 'Battlefield 1', engine: FROSTBITE, releaseDate: {d: 21, m: 10, y: 2016}, imgId: 'battlefield-1', yt: 'c7nRTF2SowQ'},
+  {name: 'Crysis 1', engine: CRYENGINE1, releaseDate: {d: 16, m: 11, y: 2007}, imgId: 'crysis-1', yt: '4YMdZnb2Zyo'},
+  {name: 'Crysis 2', engine: CRYENGINE2, releaseDate: {d: 22, m: 3, y: 2011}, imgId: 'crysis-2', yt: 'Xa1NvpiwqQk'},
+  {name: 'Crysis 3', engine: CRYENGINE3, releaseDate: {d: 19, m: 2, y: 2013}, imgId: 'crysis-3', yt: 'ax5qX6HyB-o'},
       {name: 'The Witcher 3', engine: RED_ENGINE, releaseDate: {d: 19, m: 5, y: 2015}, imgId: 'witcher3', yt: 'tDfa1Qp2SwA'},
       {name: 'Super Mario Run', engine: UNITY, releaseDate: {d: 15, m: 12, y: 2016}, imgId: 'mario-run', yt: 'wSL56aLy8BI'},
       {name: 'Minecraft', engine: LWJGL, releaseDate: {d: 17, m: 5, y: 2009}, imgId: 'minecraft', yt: 'MmB9b5njVbA'},
   	  {name: 'Super Ubie Island', engine: CONSTRUCT2, releaseDate: {d: 15, m: 1, y: 2016}, imgId: 'superubieisland', yt: 'd41yEc3CGoQ'},
-	  {name: 'Far Cry', engine: CRYENGINE1, releaseDate: {d: 23, m: 3, y: 2004}, imgId: 'farcry', yt: '_rFi_FdtJ6k'},
+	    {name: 'Far Cry', engine: CRYENGINE1, releaseDate: {d: 23, m: 3, y: 2004}, imgId: 'farcry', yt: '_rFi_FdtJ6k'},
       {name: 'The Escapist', engine: CTF, releaseDate: {d: 13, m: 2, y: 2015}, imgId: 'The-Escapists', yt: 'ixeHjuPKlUU'}, // https://community.clickteam.com/content/224-The-Escapists-Kickstarter-Launched
       {name: 'Arma 3', engine: RV4, releaseDate: {d: 12, m: 9, y: 2013}, imgId: 'arma3', yt: 'M1YBZUxMX8g'}, // https://arma3.com/features/engine
       {name: 'Argo', engine: RV4, releaseDate: {d: 22, m: 6, y: 2017}, imgId: 'argo', yt: '459VNYwtuS4'}, // Basiert auf Arma 3
@@ -85,7 +90,7 @@ GAMES = [
       {name: 'Snipperclips', engine: UNITY, releaseDate: {d: 3, m: 3, y: 2017}, imgId: 'snipperclips', yt: 'FAol5oItb2E'}, // https://en.wikipedia.org/wiki/Snipperclips
       {name: 'Firewatch', engine: UNITY, releaseDate: {d: 9, m: 2, y: 2016}, imgId: 'firewatch', yt: 'd02lhvvVSy8'}, // https://madewith.unity.com/en/games/firewatch
       {name: 'Blobcat', engine: UNITY, releaseDate: {d: 10, m: 3, y: 2017}, imgId: 'blobcat', yt: 'mszlI5CcpQo'}, // https://www.youtube.com/watch?v=LI0r2jh8UAo
-	  {name: 'Guild Wars 2', engine: OWN_ENGINE, releaseDate: {d: 28, m: 08, y: 2012}, imgId: 'gw2', yt: 'rinOhAev_5k'},
+	    {name: 'Guild Wars 2', engine: OWN_ENGINE, releaseDate: {d: 28, m: 08, y: 2012}, imgId: 'gw2', yt: 'rinOhAev_5k'},
       {name: 'The Talos Principle', engine: SERIOUS4, releaseDate: {d: 11, m: 12, y: 2014}, imgId: 'the-talos-principle', yt: 'iAVh4_wnOIw'}, // https://de.wikipedia.org/wiki/The_Talos_Principle
       {name: 'Dragon Quest XI (PS4)', engine: UNREAL4, releaseDate: {d: 29, m: 7, y: 2017}, imgId: 'dqxi', yt: 'xkntKOgnaTg'}, // https://en.wikipedia.org/wiki/Dragon_Quest_XI
       {name: 'Distance', engine: UNITY, releaseDate: {d: 9, m: 12, y: 2014}, imgId: 'distance', yt: '6IWDTeuukfc'}, // https://www.kickstarter.com/projects/refract/distance-a-next-generation-arcade-racer - Absatz "So, What's New in the Game?"
@@ -109,9 +114,10 @@ GAMES = [
       {name: 'Dota 2', engine: SOURCE2, releaseDate: {d: 9, m: 7, y: 2013}, imgId: 'dota-2', yt: '-cSFPIwMEq4'}, // https://de.wikipedia.org/wiki/Dota_2
       {name: 'Project CARS', engine: MADNESS, releaseDate: {d: 7, m: 5, y: 2015}, imgId: 'pcars', yt: 'DQIbUBbNGd0'},
       {name: 'Overwatch', engine: OWN_ENGINE, releaseDate: {d: 24, m: 05, y: 2016}, imgId: 'overwatch', yt: 'FqnKB22pOC0'},
-	  {name: 'Bioshock', engine: UNREAL2_5, releaseDate: {d: 24,m: 8, y: 2007}, imgId: 'bioshock', yt: 'rrqfPG4ZcAA'},
-	  {name: 'Bioshock 2', engine: UNREAL2_5, releaseDate: {d: 9,m: 2, y: 2010}, imgId: 'bioshock2', yt: 'Q8lngIFXRi4'},
-	  {name: 'Bioshock Infinite', engine: UNREAL3, releaseDate: {d: 26,m: 3, y: 2013}, imgId: 'bioshock_infinite', yt: 'bLHW78X1XeE'},
-	  {name: 'Fallout 3', engine: GAMEBRYO, releaseDate: {d: 28,m: 10, y: 2008}, imgId: 'fallout3', yt: 'O7a1GVlC9SM'},
-	  {name: 'Fallout: New Vegas', engine: GAMEBRYO, releaseDate: {d: 19,m: 10, y: 2010}, imgId: 'fallout_nv', yt: 'W_-6ymuk9i4'} 
+	    {name: 'Bioshock', engine: UNREAL2_5, releaseDate: {d: 24,m: 8, y: 2007}, imgId: 'bioshock', yt: 'rrqfPG4ZcAA'},
+	    {name: 'Bioshock 2', engine: UNREAL2_5, releaseDate: {d: 9,m: 2, y: 2010}, imgId: 'bioshock2', yt: 'Q8lngIFXRi4'},
+	    {name: 'Bioshock Infinite', engine: UNREAL3, releaseDate: {d: 26,m: 3, y: 2013}, imgId: 'bioshock_infinite', yt: 'bLHW78X1XeE'},
+	    {name: 'Fallout 3', engine: GAMEBRYO, releaseDate: {d: 28,m: 10, y: 2008}, imgId: 'fallout3', yt: 'O7a1GVlC9SM'},
+	    {name: 'Fallout: New Vegas', engine: GAMEBRYO, releaseDate: {d: 19,m: 10, y: 2010}, imgId: 'fallout_nv', yt: 'W_-6ymuk9i4'}, 
+	    {name: 'Terraria', engine: XNA, releaseDate: {d: 16, m: 5, y: 2011}, imgId: 'terraria', yt: '-nXdtDgpPeE'}
 ]
