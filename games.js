@@ -42,6 +42,8 @@ var CTF = 'Clickteam Fusion 2.5'
 var RV4 = 'Real Virtuality 4'
 var SOURCE = 'Source Engine'
 var SERIOUS4 = 'Serious Engine 4' // http://www.croteam.com/technology/
+var LIBGDX = 'LibGDX' // https://libgdx.badlogicgames.com/
+var MONOGAME = 'MonoGame' // http://www.monogame.net/
 
 
 GAMES = [
@@ -79,6 +81,9 @@ GAMES = [
       {name: 'The Talos Principle', engine: SERIOUS4, releaseDate: {d: 11, m: 12, y: 2014}, imgId: 'the-talos-principle', yt: 'iAVh4_wnOIw'}, // https://de.wikipedia.org/wiki/The_Talos_Principle
       {name: 'Dragon Quest XI (PS4)', engine: UNREAL4, releaseDate: {d: 29, m: 7, y: 2017}, imgId: 'dqxi', yt: 'xkntKOgnaTg'}, // https://en.wikipedia.org/wiki/Dragon_Quest_XI
       {name: 'Distance', engine: UNITY, releaseDate: {d: 9, m: 12, y: 2014}, imgId: 'distance', yt: '6IWDTeuukfc'}, // https://www.kickstarter.com/projects/refract/distance-a-next-generation-arcade-racer - Absatz "So, What's New in the Game?"
-      {name: 'Nitronic Rush', engine: OWN_ENGINE, releaseDate: {d: 11, m: 11, y: 11}, imgId: 'nitronic-rush', yt: 'vNuSvuzPL10'}, // http://nitronic-rush.com/ + Link in der Zeile darüber ^
-      {name: 'Fast Racing Neo', engine: OWN_ENGINE, releaseDate: {d: 10, m: 12, y: 2015}, imgId: 'fast-racing-neo', yt: 'jaoeNkimAUM'} // http://nintendoenthusiast.com/blog/2014/04/03/fast-racing-neo-art-balance-using-shinens-2nd-gen-wii-u-engine/
+      {name: 'Nitronic Rush', engine: OWN_ENGINE, releaseDate: {d: 11, m: 11, y: 2011}, imgId: 'nitronic-rush', yt: 'vNuSvuzPL10'}, // http://nitronic-rush.com/ + Link in der Zeile darüber ^
+      {name: 'Fast Racing Neo', engine: OWN_ENGINE, releaseDate: {d: 10, m: 12, y: 2015}, imgId: 'fast-racing-neo', yt: 'jaoeNkimAUM'}, // http://nintendoenthusiast.com/blog/2014/04/03/fast-racing-neo-art-balance-using-shinens-2nd-gen-wii-u-engine/
+      {name: 'Ingress', engine: LIBGDX, releaseDate: {d: 15, m: 11, y: 2012}, imgId: 'ingress', yt: 'Y6-JAm3NCAk'}, // https://www.quora.com/Which-game-development-framework-is-used-to-develop-Google-Ingress-game-and-why
+      {name: 'Delver', engine: LIBGDX, releaseDate: {d: 7, m: 9, y: 2013}, imgId: 'delver', yt: 'vasYOKf8SVE'}, // http://delver.wikia.com/wiki/Delver_Alpha_Version_History
+      {name: 'Axiom Verge', engine: MONOGAME, releaseDate: {d: 31, m: 3, y: 2015}, imgId: 'axiom-verge', yt: 'AVX8RjtJ7YQ'} // https://twitter.com/AxiomVerge/status/742484496893628416
 ]
