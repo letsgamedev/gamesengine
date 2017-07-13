@@ -1,6 +1,6 @@
 # gamesengine
 
-Eine Liste mit Spielen und Enginges, in denen die Spiele entwickelt wurden/werden.
+Eine Liste mit Spielen und Engines, in denen die Spiele entwickelt wurden/werden.
 
 http://lets-gamedev.de/gamesengine/
 
@@ -8,7 +8,7 @@ http://lets-gamedev.de/gamesengine/
 
 Schaue Dir das Video an, dort wird alles erklärt: https://www.youtube.com/watch?v=5BnV-xKt4bk
 
-### Anleitung (aus [games.json](https://github.com/letsgamedev/gamesengine/blob/master/games.js))
+### Anleitung (aus [games.js](https://github.com/letsgamedev/gamesengine/blob/master/games.js))
 _bitte lesen oder Video schauen!_
 
 Jedes Spiel besteht aus folgenden Informationen:
