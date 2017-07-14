@@ -38,6 +38,7 @@ var CONSTRUCT2 = 'Construct 2'
 var CTF = 'Clickteam Fusion 2.5'
 var RV4 = 'Real Virtuality 4'
 var SOURCE = 'Source Engine'
+var OPENGLES = 'OPENGL ES'
 
 GAMES = [
       {name: 'Portal', engine: SOURCE, releaseDate: {d: 9, m: 10, y: 2007}, imgId: 'portal', yt: 'TluRVBhmf8w'},
@@ -69,4 +70,7 @@ GAMES = [
       {name: 'Snipperclips', engine: UNITY, releaseDate: {d: 3, m: 3, y: 2017}, imgId: 'snipperclips', yt: 'FAol5oItb2E'}, // https://en.wikipedia.org/wiki/Snipperclips
       {name: 'Firewatch', engine: UNITY, releaseDate: {d: 9, m: 2, y: 2016}, imgId: 'firewatch', yt: 'd02lhvvVSy8'}, // https://madewith.unity.com/en/games/firewatch
       {name: 'Blobcat', engine: UNITY, releaseDate: {d: 10, m: 3, y: 2017}, imgId: 'blobcat', yt: 'mszlI5CcpQo'}, // https://www.youtube.com/watch?v=LI0r2jh8UAo
+	  {name: 'Scrap Mechanic', engine: OWN_ENGINE, releaseDate: {d: 19, m: 1, y: 2016}, imgId: 'scrap-mechanic', yt: '5kjBuCK_ZKM'},// http://www.scrapmechanic.com/news/devblog-8-is-here/
+	  {name: 'Fernbus Simulator', engine: UNREAL4, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'fernbus-simulator', yt: 'GvngaKeCO2k'}, // http://store.steampowered.com/app/427100/Fernbus_Simulator/?l=german
+	  {name: 'Minecraft Pocket Edition', engine: OPENGLES, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'minecraft-pe', yt: 'X-fMtNOS_gU'}, // https://www.quora.com/Was-Minecraft-PE-developed-using-OpenGL-ES-or-a-third-party-game-engine-like-Unity - http://minecraft-de.gamepedia.com/Pocket_Edition
 ]
