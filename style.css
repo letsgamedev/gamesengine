@@ -4,8 +4,12 @@ body {
     margin-top: 50px;
 }
 
+.searchbar {
+	margin-bottom: 10px;
+}
+
 .headLine {
-	color: red;
+	color: #ff2b56;
 }
 
 .modal-content {
@@ -32,7 +36,7 @@ td {
 }
 
 a {
-	color: red !important;
+	color: #ff2b56 !important;
 }
 
 .screenshot {

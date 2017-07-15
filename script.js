@@ -38,19 +38,23 @@ Vue.component('game-table', {
 
   computed: {
     filteredData: function () {
-      console.log('new calx')
       var sortKey = this.sortKey.toLowerCase() || 'name'
       var filterKey = this.filterKey && this.filterKey.toLowerCase()
       var order = this.sortOrders[this.sortKey] || 1
       var data = this.data
-      /* if (filterKey) {
+      setAllButtonDisabled(!filterKey)
+      if (filterKey) {
         data = data.filter(function (row) {
           return Object.keys(row).some(function (key) {
-            return String(row[key]).toLowerCase().indexOf(filterKey) > -1
+            if (key === "releaseDate") {
+              return generateDateFormat(row[key]).indexOf(filterKey) > -1
+            } else {
+              return String(row[key]).toLowerCase().indexOf(filterKey) > -1
+            }
+            
           })
         })
-      } */
-      console.log(data, sortKey)
+      } 
       var alphaSort = function (a, b) {
         a = a[sortKey]
         b = b[sortKey]
@@ -62,7 +66,6 @@ Vue.component('game-table', {
           var d = 0
           var m = 0
           var y = 0
-          console.log('hui', date)
           if (date.hasOwnProperty('q')) {
             d = 31
             switch (date.q) {
@@ -78,7 +81,7 @@ Vue.component('game-table', {
             y = date.y
           }
 
-          return y + (m < 10 ? '0' + m : m) + (d < 10 ? '0' + d : d)
+          return '' + y + (m < 10 ? '0' + m : m) + (d < 10 ? '0' + d : d)
         }
         var at = trans(a.releaseDate)
         var bt = trans(b.releaseDate)
@@ -111,17 +114,6 @@ Vue.component('table-entry', {
 
     openImg (src) {
       return 'setImageModal(true,"' + src + '")'
-    },
-
-    generateDateFormat (v) {
-      if (v.hasOwnProperty('q')) {
-        return 'Q' + v.q + ' ' + v.y
-      } else {
-        var d = v.d < 10 ? '0' + v.d : v.d
-        var m = v.m < 10 ? '0' + v.m : v.m
-        var y = v.y
-        return d + '.' + m + '.' + y
-      }
     }
   }
 })
@@ -135,25 +127,38 @@ Vue.component('engine-link', {
   methods: {
     getLink (v) {
       switch (v) {
-        case UNITY: return 'https://unity3d.com'
-        case UNREAL4: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
-        case UNREAL3: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
-        case XNA: return 'https://en.wikipedia.org/wiki/Microsoft_XNA'
+                case CLICK_TEAM_FUSION: return 'http://www.clickteam.com/clickteam-fusion-2-5'
+        case COCOS2D: return 'http://cocos2d.org/'
+        case CONSTRUCT2: return 'https://www.scirra.com/'
+        case CREATION_ENGINE: return 'https://en.wikipedia.org/wiki/Creation_Engine'
+        case CRYENGINE1: return 'https://www.cryengine.com/'
+        case CRYENGINE2: return 'https://www.cryengine.com/'
+        case CRYENGINE3: return 'https://www.cryengine.com/'
+        case CRYENGINEV: return 'https://www.cryengine.com/'
+        case FROSTBITE: return 'https://www.ea.com/frostbite'
         case GAME_MAKER1: return 'https://www.yoyogames.com/'
         case GAME_MAKER2: return 'https://www.yoyogames.com/'
+        case GAMEBRYO: return 'http://www.gamebryo.com/'
         case GODOT: return 'https://godotengine.org/'
-        case FROSTBITE: return 'https://www.ea.com/frostbite'
+        case GOLD_SRC: return 'https://de.wikipedia.org/wiki/GoldSrc'
+        case J_MONKEY_ENGINE: return 'http://jmonkeyengine.org/'
+        case LIBGDX: return 'https://libgdx.badlogicgames.com/'
+        case LUMBERYARD: return 'https://aws.amazon.com/de/lumberyard/'
+        case LWJGL: return 'https://www.lwjgl.org/'
+        case MADNESS: return 'http://www.slightlymadstudios.com/tech.html'
+        case MONOGAME: return 'http://www.monogame.net/'
         case OWN_ENGINE: return ''
         case PHASERJS: return 'https://phaser.io/'
-        case COCOS2D: return 'http://cocos2d.org/'
+        case REAL_VIRTUALITY_4: return 'https://arma3.com/features/engine'
         case RED_ENGINE: return 'https://en.wikipedia.org/wiki/REDengine'
-        case LWJGL: return 'https://www.lwjgl.org/'
-        case CONSTRUCT2: return 'https://www.scirra.com/'
-        case CTF: return 'http://www.clickteam.com/clickteam-fusion-2-5'
-        case RV4: return 'https://arma3.com/features/engine'
-        case CRYENGINE: return 'https://www.cryengine.com/'
-        case SOURCE: return 'https://de.wikipedia.org/wiki/Source_Engine' 
-		case OPENGLES: return 'https://www.khronos.org/opengles/'
+        case SERIOUS4: return 'http://www.croteam.com/technology/'
+        case SOURCE: return 'https://de.wikipedia.org/wiki/Source_Engine'
+        case SOURCE2: return 'http://de.valve.wikia.com/wiki/Source_2_Engine'
+        case UNITY: return 'https://unity3d.com'
+        case UNREAL2_5: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
+        case UNREAL3: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
+        case UNREAL4: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
+        case XNA: return 'https://en.wikipedia.org/wiki/Microsoft_XNA'
         default: return 'http://lets-gamedev.de/help/'
       }
     }
@@ -189,6 +194,8 @@ var app = new Vue({
       }
     },
 
+    searchQuery: '',
+
     head: ['Name', 'Screen Shot', 'Engine', 'Release', '<span class="icon"><i class="fa fa-youtube-play"></i></span>'],
 
     games: GAMES
@@ -205,4 +212,23 @@ function setImageModal (toOn, src) {
   } else {
     modal.className = 'modal'
   }
+}
+
+function setAllButtonDisabled(isDisabled) {
+  document.getElementById('all-button').disabled = isDisabled
+}
+
+function generateDateFormat (v) {
+  if (v.hasOwnProperty('q')) {
+    return 'Q' + v.q + ' ' + v.y
+  } else {
+    var d = v.d < 10 ? '0' + v.d : v.d
+    var m = v.m < 10 ? '0' + v.m : v.m
+    var y = v.y
+    return d + '.' + m + '.' + y
+  }
+}
+
+function seeAllGames() {
+  app.searchQuery = ''
 }
