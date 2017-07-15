@@ -52,11 +52,12 @@ var UNREAL2_5= 'Unreal Engine 2.5'
 var UNREAL3 = 'Unreal Engine 3'
 var UNREAL4 = 'Unreal Engine 4'
 var XNA = 'Microsoft XNA'
-
-
-
+var OPENGLES = 'OPENGL ES'
 
 GAMES = [
+	  {name: 'Scrap Mechanic', engine: OWN_ENGINE, releaseDate: {d: 19, m: 1, y: 2016}, imgId: 'scrap-mechanic', yt: '5kjBuCK_ZKM'},// http://www.scrapmechanic.com/news/devblog-8-is-here/
+	  {name: 'Fernbus Simulator', engine: UNREAL4, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'fernbus-simulator', yt: 'GvngaKeCO2k'}, // http://store.steampowered.com/app/427100/Fernbus_Simulator/?l=german
+	  {name: 'Minecraft Pocket Edition', engine: OPENGLES, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'minecraft-pe', yt: 'X-fMtNOS_gU'}, // https://www.quora.com/Was-Minecraft-PE-developed-using-OpenGL-ES-or-a-third-party-game-engine-like-Unity - http://minecraft-de.gamepedia.com/Pocket_Edition
   {name: 'Mass Effect: Andromeda', engine: FROSTBITE, releaseDate: {d: 23, m: 3, y: 2017}, imgId: 'MEAndromeda', yt: '4Q5gea3iS40'},
   {name: 'Mass Effect', engine: UNREAL3, releaseDate: {d: 16, m: 11, y: 2007}, imgId: 'ME1', yt: '-_6ZMr2bMco'},
   {name: 'Mass Effect 2', engine: UNREAL3, releaseDate: {d: 26, m: 1, y: 2010}, imgId: 'ME2', yt: 'L5c05XSGp5w'},
@@ -123,6 +124,6 @@ GAMES = [
   {name: 'Fallout 3', engine: GAMEBRYO, releaseDate: {d: 28,m: 10, y: 2008}, imgId: 'fallout3', yt: 'O7a1GVlC9SM'},
   {name: 'Fallout: New Vegas', engine: GAMEBRYO, releaseDate: {d: 19,m: 10, y: 2010}, imgId: 'fallout_nv', yt: 'W_-6ymuk9i4'}, 
   {name: 'Terraria', engine: XNA, releaseDate: {d: 16, m: 5, y: 2011}, imgId: 'terraria', yt: '-nXdtDgpPeE'},
-  {name: 'Gunslugs 2', engine: LIBGDX, releaseDate: {d: 14, m: 1, y: 2015}, imgId: 'gunslugs2', yt: 'BxL8HIPMcFA'}
-  {name: 'Gwent: The Witcher Card Game', engine: UNITY, releaseData: {d: 24, m: 5, y: 2017}, imgId: 'gwent' /* https://www.playgwent.com/img/screenshots/How_to_win.32.jpg */, yt: 'sKqy04OmOGo'} // https://en.wikipedia.org/wiki/CD_Projekt#Games_development (Releasetag = Start der Open Beta)
+  {name: 'Gunslugs 2', engine: LIBGDX, releaseDate: {d: 14, m: 1, y: 2015}, imgId: 'gunslugs2', yt: 'BxL8HIPMcFA'},
+  {name: 'Gwent: The Witcher Card Game', engine: UNITY, releaseData: {d: 24, m: 5, y: 2017}, imgId: 'gwent', yt: 'sKqy04OmOGo'} // https://en.wikipedia.org/wiki/CD_Projekt#Games_development (Releasetag = Start der Open Beta)
 ]
