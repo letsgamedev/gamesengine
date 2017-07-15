@@ -46,15 +46,14 @@ Vue.component('game-table', {
       if (filterKey) {
         data = data.filter(function (row) {
           return Object.keys(row).some(function (key) {
-            if (key === "releaseDate") {
+            if (key === 'releaseDate') {
               return generateDateFormat(row[key]).indexOf(filterKey) > -1
             } else {
               return String(row[key]).toLowerCase().indexOf(filterKey) > -1
             }
-            
           })
         })
-      } 
+      }
       var alphaSort = function (a, b) {
         a = a[sortKey]
         b = b[sortKey]
@@ -111,7 +110,9 @@ Vue.component('table-entry', {
   `,
 
   methods: {
-
+    generateDateFormat (date) {
+      return generateDateFormat(date)
+    },
     openImg (src) {
       return 'setImageModal(true,"' + src + '")'
     }
@@ -127,7 +128,7 @@ Vue.component('engine-link', {
   methods: {
     getLink (v) {
       switch (v) {
-                case CLICK_TEAM_FUSION: return 'http://www.clickteam.com/clickteam-fusion-2-5'
+        case CLICK_TEAM_FUSION: return 'http://www.clickteam.com/clickteam-fusion-2-5'
         case COCOS2D: return 'http://cocos2d.org/'
         case CONSTRUCT2: return 'https://www.scirra.com/'
         case CREATION_ENGINE: return 'https://en.wikipedia.org/wiki/Creation_Engine'
@@ -148,6 +149,7 @@ Vue.component('engine-link', {
         case MADNESS: return 'http://www.slightlymadstudios.com/tech.html'
         case MONOGAME: return 'http://www.monogame.net/'
         case OWN_ENGINE: return ''
+        case OPENGLES: return 'https://www.khronos.org/opengles/'
         case PHASERJS: return 'https://phaser.io/'
         case REAL_VIRTUALITY_4: return 'https://arma3.com/features/engine'
         case RED_ENGINE: return 'https://en.wikipedia.org/wiki/REDengine'
@@ -214,7 +216,7 @@ function setImageModal (toOn, src) {
   }
 }
 
-function setAllButtonDisabled(isDisabled) {
+function setAllButtonDisabled (isDisabled) {
   document.getElementById('all-button').disabled = isDisabled
 }
 
@@ -229,6 +231,6 @@ function generateDateFormat (v) {
   }
 }
 
-function seeAllGames() {
+function seeAllGames () {
   app.searchQuery = ''
 }
