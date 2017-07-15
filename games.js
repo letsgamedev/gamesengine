@@ -29,6 +29,7 @@ var CRYENGINE1 = 'CryEngine 1'
 var CRYENGINE2 = 'CryEngine 2'
 var CRYENGINE3 = 'CryEngine 3'
 var CRYENGINEV = 'CryEngine V'
+var DIESEL = 'Diesel 2'
 var FROSTBITE = 'Frostbite'
 var GAME_MAKER1 = 'Game Maker Studio'
 var GAME_MAKER2 = 'Game Maker Studio 2'
@@ -118,6 +119,7 @@ GAMES = [
   {name: 'Team Fortress 2', engine: SOURCE, releaseDate: {d: 10, m: 10, y: 2007}, imgId: 'team-fortress-2', yt: 'h_c3iQImXZg'}, // https://de.wikipedia.org/wiki/Team_Fortress_2
   {name: 'Dota 2', engine: SOURCE2, releaseDate: {d: 9, m: 7, y: 2013}, imgId: 'dota-2', yt: '-cSFPIwMEq4'}, // https://de.wikipedia.org/wiki/Dota_2
   {name: 'Project CARS', engine: MADNESS, releaseDate: {d: 7, m: 5, y: 2015}, imgId: 'pcars', yt: 'DQIbUBbNGd0'},
+  {name: 'Payday 2', engine: DIESEL, releaseDate: {d: 13, m: 10, y: 2013}, imgId: 'payday2', yt: 'Gb-_DKC6wc4'},
   {name: 'Overwatch', engine: OWN_ENGINE, releaseDate: {d: 24, m: 05, y: 2016}, imgId: 'overwatch', yt: 'FqnKB22pOC0'},
   {name: 'Bioshock', engine: UNREAL2_5, releaseDate: {d: 24,m: 8, y: 2007}, imgId: 'bioshock', yt: 'rrqfPG4ZcAA'},
   {name: 'Bioshock 2', engine: UNREAL2_5, releaseDate: {d: 9,m: 2, y: 2010}, imgId: 'bioshock2', yt: 'Q8lngIFXRi4'},
