@@ -141,6 +141,7 @@ Vue.component('engine-link', {
         case GAMEBRYO: return 'http://www.gamebryo.com/'
         case GODOT: return 'https://godotengine.org/'
         case GOLD_SRC: return 'https://de.wikipedia.org/wiki/GoldSrc'
+        case IGNITE: return 'https://http://www.easports.com/ignite'
         case J_MONKEY_ENGINE: return 'http://jmonkeyengine.org/'
         case LIBGDX: return 'https://libgdx.badlogicgames.com/'
         case LUMBERYARD: return 'https://aws.amazon.com/de/lumberyard/'
