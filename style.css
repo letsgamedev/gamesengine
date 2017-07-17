@@ -12,6 +12,12 @@ body {
 	color: #ff2b56;
 }
 
+.engineSearchIcon {
+	  font-size: 15px;
+    vertical-align: baseline;
+    color: #efefef;
+}
+
 .modal-content {
 	width: 80%;
 }

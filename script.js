@@ -122,13 +122,18 @@ Vue.component('table-entry', {
 Vue.component('engine-link', {
   props: ['name'],
   template: `
-    <a :href=getLink(name) target="_blank">{{name}}</a>
+    <span><a :href=getLink(name) target="_blank">{{name}}</a> </br> <i @click="search()" class="fa fa-search fa-1 engineSearchIcon"></i></span>
   `,
 
   methods: {
+    search: function() {
+      console.log("ji", this.name)
+      this.$root.searchQuery = this.name
+    },
     getLink (v) {
       switch (v) {
         case CLICK_TEAM_FUSION: return 'http://www.clickteam.com/clickteam-fusion-2-5'
+        case COBRA_ENGINE: return 'https://www.frontier.co.uk/node/639'
         case COCOS2D: return 'http://cocos2d.org/'
         case CONSTRUCT2: return 'https://www.scirra.com/'
         case CREATION_ENGINE: return 'https://en.wikipedia.org/wiki/Creation_Engine'
@@ -136,12 +141,14 @@ Vue.component('engine-link', {
         case CRYENGINE2: return 'https://www.cryengine.com/'
         case CRYENGINE3: return 'https://www.cryengine.com/'
         case CRYENGINEV: return 'https://www.cryengine.com/'
+        case DIESEL: return 'https://en.wikipedia.org/wiki/Diesel_(game_engine)'
         case FROSTBITE: return 'https://www.ea.com/frostbite'
         case GAME_MAKER1: return 'https://www.yoyogames.com/'
         case GAME_MAKER2: return 'https://www.yoyogames.com/'
         case GAMEBRYO: return 'http://www.gamebryo.com/'
         case GODOT: return 'https://godotengine.org/'
         case GOLD_SRC: return 'https://de.wikipedia.org/wiki/GoldSrc'
+        case IGNITE: return 'http://www.easports.com/ignite'
         case J_MONKEY_ENGINE: return 'http://jmonkeyengine.org/'
         case LIBGDX: return 'https://libgdx.badlogicgames.com/'
         case LUMBERYARD: return 'https://aws.amazon.com/de/lumberyard/'

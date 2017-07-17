@@ -22,6 +22,7 @@ imgId: Der Name des dementsprechenden Bildes im 'img/' order der Seite
 
 // ENGINES
 var CLICK_TEAM_FUSION = 'Clickteam Fusion 2.5'
+var COBRA_ENGINE = 'Cobra'
 var COCOS2D = 'Cocos2D'
 var CONSTRUCT2 = 'Construct 2'
 var CREATION_ENGINE = 'Creation-Engine'
@@ -29,12 +30,14 @@ var CRYENGINE1 = 'CryEngine 1'
 var CRYENGINE2 = 'CryEngine 2'
 var CRYENGINE3 = 'CryEngine 3'
 var CRYENGINEV = 'CryEngine V'
+var DIESEL = 'Diesel'
 var FROSTBITE = 'Frostbite'
 var GAME_MAKER1 = 'Game Maker Studio'
 var GAME_MAKER2 = 'Game Maker Studio 2'
 var GAMEBRYO = 'Gamebryo'
 var GODOT = 'Godot'
 var GOLD_SRC = 'GoldSrc'
+var IGNITE = 'Ignite' 
 var J_MONKEY_ENGINE = 'jMonkeyEngine'
 var LIBGDX = 'LibGDX'
 var LUMBERYARD = 'Lumberyard Engine'
@@ -126,5 +129,19 @@ GAMES = [
   {name: 'Fallout: New Vegas', engine: GAMEBRYO, releaseDate: {d: 19,m: 10, y: 2010}, imgId: 'fallout_nv', yt: 'W_-6ymuk9i4'},
   {name: 'Terraria', engine: XNA, releaseDate: {d: 16, m: 5, y: 2011}, imgId: 'terraria', yt: '-nXdtDgpPeE'},
   {name: 'Gunslugs 2', engine: LIBGDX, releaseDate: {d: 14, m: 1, y: 2015}, imgId: 'gunslugs2', yt: 'BxL8HIPMcFA'},
-  {name: 'Gwent: The Witcher Card Game', engine: UNITY, releaseDate: {d: 24, m: 5, y: 2017}, imgId: 'gwent', yt: 'sKqy04OmOGo'} // https://en.wikipedia.org/wiki/CD_Projekt#Games_development (Releasetag = Start der Open Beta)
+  {name: 'Gwent: The Witcher Card Game', engine: UNITY, releaseDate: {d: 24, m: 5, y: 2017}, imgId: 'gwent', yt: 'sKqy04OmOGo'}, // https://en.wikipedia.org/wiki/CD_Projekt#Games_development (Releasetag = Start der Open Beta)
+  {name: 'Pokemon GO', engine: UNITY, releaseDate: {d: 6, m: 7, y: 2016}, imgId: 'pokemon_go', yt: '2sj2iQyBTQs'}, //https://www.youtube.com/watch?v=8hru629dkRY
+  {name: 'Planet Coaster', engine: COBRA_ENGINE, releaseDate: {d: 17, m: 11, y: 2016}, imgId: 'planet_coaster', yt: 'QDqlXGg394k'}, //https://de.wikipedia.org/wiki/Planet_Coaster
+  {name: 'Elite: Dangerous', engine: COBRA_ENGINE, releaseDate: {d: 16, m: 12, y: 2014}, imgId: 'elite_dangerous', yt: 'YESNObZJTgQ'},
+  {name: 'Ori and the Blind Forest', engine: UNITY, releaseDate: {d: 11, m: 3, y: 2015}, imgId: 'ori_and_the_blind_forest', yt: 'cklw-Yu3moE'}, //https://de.wikipedia.org/wiki/Ori_and_the_Blind_Forest
+  {name: 'Ori and the Will of the Wisps', engine: UNITY, releaseDate: {q: 2, y: 2018}, imgId: 'ori_and_the_will_of_the_wisps', yt: '2kPSl2vyu2Y'}, //Releasedate is not really known yet, would be nice to have a case for this
+  {name: 'PAYDAY: The Heist', engine: DIESEL, releaseDate: {d: 20, m: 10, y: 2011}, imgId: 'payday_the_heist', yt: 'o9PGpkZNQKg'},
+  {name: 'PAYDAY 2', engine: DIESEL, releaseDate: {d: 13, m: 8, y: 2013}, imgId: 'payday_2', yt: 'Gb-_DKC6wc4'},
+  {name: 'PREY', engine: CRYENGINE3, releaseDate: {d: 5, m: 5, y: 2017}, imgId: 'prey_2017', yt: '1hKTZGflqrc'},
+  {name: 'Rust', engine: UNITY, releaseDate: {d: 11, m: 12, y: 2013}, imgId: 'rust', yt: 'gcvDUxdmntw'},
+  {name: 'Subnautica', engine: UNITY, releaseDate: {d: 16, m: 12, y: 2014}, imgId: 'subnautica', yt: '_7BzngvURrk'},
+  {name: 'Fifa 16', engine: IGNITE, releaseDate: {d: 22, m: 9, y: 2015}, imgId: 'fifa16', yt: 'bwz98athxQ8'}, 
+  {name: 'Fifa 17', engine: FROSTBITE, releaseDate: {d: 27, m: 9 , y: 2016}, imgId: 'fifa17', yt: 'yYjD78X1d9Q'}, 
+  {name: 'Fifa 18', engine: FROSTBITE, releaseDate: {d: 29, m: 9, y: 2017}, imgId: 'fifa18', yt: 'z_7Gz_RFLnE'}, 
+  {name: 'League of Legends', engine: OWN_ENGINE, releaseDate: {d: 27, m: 10, y: 2009}, imgId: 'league-of-legends', yt: 'cXZqfuJ9Zps'} 
 ]
