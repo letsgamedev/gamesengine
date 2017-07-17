@@ -47,8 +47,10 @@ var MONOGAME = 'MonoGame'
 var OWN_ENGINE = 'Own Engine'
 var OPENGLES = 'OpenGL ES'
 var PHASERJS = 'Phaser.js'
+var RAGE = "Rockstart Advanced Game Engine"
 var REAL_VIRTUALITY_4 = 'Real Virtuality 4'
 var RED_ENGINE = 'REDengine 2/3/4'
+var RENDERWARE = 'RenderWare'
 var SERIOUS4 = 'Serious Engine 4'
 var SOURCE = 'Source Engine'
 var SOURCE2 = 'Source 2'
@@ -143,5 +145,10 @@ GAMES = [
   {name: 'Fifa 16', engine: IGNITE, releaseDate: {d: 22, m: 9, y: 2015}, imgId: 'fifa16', yt: 'bwz98athxQ8'}, 
   {name: 'Fifa 17', engine: FROSTBITE, releaseDate: {d: 27, m: 9 , y: 2016}, imgId: 'fifa17', yt: 'yYjD78X1d9Q'}, 
   {name: 'Fifa 18', engine: FROSTBITE, releaseDate: {d: 29, m: 9, y: 2017}, imgId: 'fifa18', yt: 'z_7Gz_RFLnE'}, 
-  {name: 'League of Legends', engine: OWN_ENGINE, releaseDate: {d: 27, m: 10, y: 2009}, imgId: 'league-of-legends', yt: 'cXZqfuJ9Zps'} 
+  {name: 'League of Legends', engine: OWN_ENGINE, releaseDate: {d: 27, m: 10, y: 2009}, imgId: 'league-of-legends', yt: 'cXZqfuJ9Zps'},
+  {name: 'Grand Theft Auto III', engine: RENDERWARE, releaseDate: {d: 22, m: 10, y: 2001}, imgId: 'gta-3', yt: 'lCyiW882D7U'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto_III
+  {name: 'Grand Theft Auto: Vice City', engine: RENDERWARE, releaseDate: {d: 27, m: 10, y: 2002}, imgId: 'gta-vc', yt: 'MpmDawqOfqs'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City
+  {name: 'Grand Theft Auto: San Andreas', engine: RENDERWARE, releaseDate: {d: 26, m: 10, y: 2004}, imgId: 'gta-sa', yt: 'u_CbHrBbHNQ'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas
+  {name: 'Grand Theft Auto IV', engine: RAGE, releaseDate: {d: 29, m: 4, y: 2008}, imgId: 'gta-4', yt: 'M80K51DosFo'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto_IV
+  {name: 'Grand Theft Auto V', engine: RAGE, releaseDate: {d: 17, m: 9, y: 2013}, imgId: 'gta-5', yt: 'QkkoHAzjnUs'} // https://de.wikipedia.org/wiki/Grand_Theft_Auto_V
 ]
