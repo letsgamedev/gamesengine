@@ -21,6 +21,10 @@ imgId: Der Name des dementsprechenden Bildes im 'img/' order der Seite
 */
 
 // ENGINES
+var SCIMITAR = 'Scimitar'
+var ANVIL = 'Anvil'
+var ANVIL_NEXT = 'AnvilNext'
+var ANVIL_NEXT_2 = 'AnvilNext 2.0'
 var CLICK_TEAM_FUSION = 'Clickteam Fusion 2.5'
 var COBRA_ENGINE = 'Cobra'
 var COCOS2D = 'Cocos2D'
@@ -37,7 +41,7 @@ var GAME_MAKER2 = 'Game Maker Studio 2'
 var GAMEBRYO = 'Gamebryo'
 var GODOT = 'Godot'
 var GOLD_SRC = 'GoldSrc'
-var IGNITE = 'Ignite' 
+var IGNITE = 'Ignite'
 var J_MONKEY_ENGINE = 'jMonkeyEngine'
 var LIBGDX = 'LibGDX'
 var LUMBERYARD = 'Lumberyard Engine'
@@ -59,9 +63,18 @@ var UNREAL4 = 'Unreal Engine 4'
 var XNA = 'Microsoft XNA'
 
 GAMES = [
-    {name: 'Scrap Mechanic', engine: OWN_ENGINE, releaseDate: {d: 19, m: 1, y: 2016}, imgId: 'scrap-mechanic', yt: '5kjBuCK_ZKM'}, // http://www.scrapmechanic.com/news/devblog-8-is-here/
-    {name: 'Fernbus Simulator', engine: UNREAL4, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'fernbus-simulator', yt: 'GvngaKeCO2k'}, // http://store.steampowered.com/app/427100/Fernbus_Simulator/?l=german
-    {name: 'Minecraft Pocket Edition', engine: OPENGLES, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'minecraft-pe', yt: 'X-fMtNOS_gU'}, // https://www.quora.com/Was-Minecraft-PE-developed-using-OpenGL-ES-or-a-third-party-game-engine-like-Unity - http://minecraft-de.gamepedia.com/Pocket_Edition
+  {name: 'Assassin\'s Creed', engine: SCIMITAR, releaseDate: {d: 13, m: 11, y: 2007}, imgId: 'assassins-creed' , yt: 'EfAL15MH12Q'}, //Jeweils das erste veröffentlichungsdatum in Europa. Quelle: Wikipedia (gilt für alle Teile der Reihe)
+  {name: 'Assassin\'s Creed II', engine: ANVIL, releaseDate: {d: 20, m: 11, y: 2009}, imgId: 'assassins-creed-2', yt: 'RaOPz5QLa60'},
+  {name: 'Assassin\'s Creed: Brotherhood', engine: ANVIL, releaseDate: {d: 19, m: 11, y: 2010}, imgId: 'assassins-creed-brotherhood' , yt: 'sNviW5Nj8Eo'},
+  {name: 'Assassin\'s Creed: Revelations', engine: ANVIL, releaseDate: {d: 15, m: 11, y: 2011}, imgId: 'assassins-creed-revelations', yt: '8-Ixo7QXw_E'},
+  {name: 'Assassin\'s Creed III', engine: ANVIL_NEXT, releaseDate: {d: 31, m: 10, y: 2012}, imgId: 'assassins-creed-3', yt: 'ayCZh3cVofY'},
+  {name: 'Assassin\'s Creed IV: Black Flag', engine: ANVIL_NEXT, releaseDate: {d: 29, m: 10, y: 2013}, imgId: 'assassins-creed-4', yt: 'qNCPc66NcpE'},
+  {name: 'Assassin\'s Creed Rogue', engine: ANVIL_NEXT, releaseDate: {d: 13 , m: 11, y: 2014}, imgId: 'assassins-creed-rogue', yt: 'Da6TZCPODy8'},
+  {name: 'Assassin\'s Creed Unity', engine: ANVIL_NEXT_2, releaseDate: {d: 13, m: 11, y: 2014}, imgId: 'assassins-creed-unity', yt: 'EPghYEmAakY'},
+  {name: 'Assassin\'s Creed Syndicate', engine: ANVIL_NEXT_2, releaseDate: {d: 23, m: 10, y: 2015}, imgId: 'assassins-creed-syndicate', yt: '7D-lXhGoy7A'},
+  {name: 'Scrap Mechanic', engine: OWN_ENGINE, releaseDate: {d: 19, m: 1, y: 2016}, imgId: 'scrap-mechanic', yt: '5kjBuCK_ZKM'}, // http://www.scrapmechanic.com/news/devblog-8-is-here/
+  {name: 'Fernbus Simulator', engine: UNREAL4, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'fernbus-simulator', yt: 'GvngaKeCO2k'}, // http://store.steampowered.com/app/427100/Fernbus_Simulator/?l=german
+  {name: 'Minecraft Pocket Edition', engine: OPENGLES, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'minecraft-pe', yt: 'X-fMtNOS_gU'}, // https://www.quora.com/Was-Minecraft-PE-developed-using-OpenGL-ES-or-a-third-party-game-engine-like-Unity - http://minecraft-de.gamepedia.com/Pocket_Edition
   {name: 'Mass Effect: Andromeda', engine: FROSTBITE, releaseDate: {d: 23, m: 3, y: 2017}, imgId: 'MEAndromeda', yt: '4Q5gea3iS40'},
   {name: 'Mass Effect', engine: UNREAL3, releaseDate: {d: 16, m: 11, y: 2007}, imgId: 'ME1', yt: '-_6ZMr2bMco'},
   {name: 'Mass Effect 2', engine: UNREAL3, releaseDate: {d: 26, m: 1, y: 2010}, imgId: 'ME2', yt: 'L5c05XSGp5w'},
@@ -137,11 +150,11 @@ GAMES = [
   {name: 'Ori and the Will of the Wisps', engine: UNITY, releaseDate: {q: 2, y: 2018}, imgId: 'ori_and_the_will_of_the_wisps', yt: '2kPSl2vyu2Y'}, //Releasedate is not really known yet, would be nice to have a case for this
   {name: 'PAYDAY: The Heist', engine: DIESEL, releaseDate: {d: 20, m: 10, y: 2011}, imgId: 'payday_the_heist', yt: 'o9PGpkZNQKg'},
   {name: 'PAYDAY 2', engine: DIESEL, releaseDate: {d: 13, m: 8, y: 2013}, imgId: 'payday_2', yt: 'Gb-_DKC6wc4'},
-  {name: 'PREY', engine: CRYENGINE3, releaseDate: {d: 5, m: 5, y: 2017}, imgId: 'prey_2017', yt: '1hKTZGflqrc'},
+  {name: 'PREY', engine: CRYENGINEV, releaseDate: {d: 5, m: 5, y: 2017}, imgId: 'prey_2017', yt: '1hKTZGflqrc'},
   {name: 'Rust', engine: UNITY, releaseDate: {d: 11, m: 12, y: 2013}, imgId: 'rust', yt: 'gcvDUxdmntw'},
   {name: 'Subnautica', engine: UNITY, releaseDate: {d: 16, m: 12, y: 2014}, imgId: 'subnautica', yt: '_7BzngvURrk'},
-  {name: 'Fifa 16', engine: IGNITE, releaseDate: {d: 22, m: 9, y: 2015}, imgId: 'fifa16', yt: 'bwz98athxQ8'}, 
-  {name: 'Fifa 17', engine: FROSTBITE, releaseDate: {d: 27, m: 9 , y: 2016}, imgId: 'fifa17', yt: 'yYjD78X1d9Q'}, 
-  {name: 'Fifa 18', engine: FROSTBITE, releaseDate: {d: 29, m: 9, y: 2017}, imgId: 'fifa18', yt: 'z_7Gz_RFLnE'}, 
-  {name: 'League of Legends', engine: OWN_ENGINE, releaseDate: {d: 27, m: 10, y: 2009}, imgId: 'league-of-legends', yt: 'cXZqfuJ9Zps'} 
+  {name: 'Fifa 16', engine: IGNITE, releaseDate: {d: 22, m: 9, y: 2015}, imgId: 'fifa16', yt: 'bwz98athxQ8'},
+  {name: 'Fifa 17', engine: FROSTBITE, releaseDate: {d: 27, m: 9 , y: 2016}, imgId: 'fifa17', yt: 'yYjD78X1d9Q'},
+  {name: 'Fifa 18', engine: FROSTBITE, releaseDate: {d: 29, m: 9, y: 2017}, imgId: 'fifa18', yt: 'z_7Gz_RFLnE'},
+  {name: 'League of Legends', engine: OWN_ENGINE, releaseDate: {d: 27, m: 10, y: 2009}, imgId: 'league-of-legends', yt: 'cXZqfuJ9Zps'}
 ]
