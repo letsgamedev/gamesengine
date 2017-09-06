@@ -143,5 +143,6 @@ GAMES = [
   {name: 'Fifa 16', engine: IGNITE, releaseDate: {d: 22, m: 9, y: 2015}, imgId: 'fifa16', yt: 'bwz98athxQ8'}, 
   {name: 'Fifa 17', engine: FROSTBITE, releaseDate: {d: 27, m: 9 , y: 2016}, imgId: 'fifa17', yt: 'yYjD78X1d9Q'}, 
   {name: 'Fifa 18', engine: FROSTBITE, releaseDate: {d: 29, m: 9, y: 2017}, imgId: 'fifa18', yt: 'z_7Gz_RFLnE'}, 
-  {name: 'League of Legends', engine: OWN_ENGINE, releaseDate: {d: 27, m: 10, y: 2009}, imgId: 'league-of-legends', yt: 'cXZqfuJ9Zps'} 
+  {name: 'League of Legends', engine: OWN_ENGINE, releaseDate: {d: 27, m: 10, y: 2009}, imgId: 'league-of-legends', yt: 'cXZqfuJ9Zps'}
+  {name: 'Nidhogg 2', engine: GAME_MAKER1, releaseDate: {d: 15, m: 8, y: 2017}, imgId: 'nidhogg2B', yt: 'ZrAkPDSTLIc'}
 ]
