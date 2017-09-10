@@ -24,6 +24,7 @@ imgId: Der Name des dementsprechenden Bildes im 'img/' order der Seite
 var CLICK_TEAM_FUSION = 'Clickteam Fusion 2.5'
 var COBRA_ENGINE = 'Cobra'
 var COCOS2D = 'Cocos2D'
+var COCOS2DX = 'Cocos2D-x'
 var CONSTRUCT2 = 'Construct 2'
 var CREATION_ENGINE = 'Creation-Engine'
 var CRYENGINE1 = 'CryEngine 1'
@@ -90,7 +91,7 @@ GAMES = [
   {name: 'Minecraft', engine: LWJGL, releaseDate: {d: 17, m: 5, y: 2009}, imgId: 'minecraft', yt: 'MmB9b5njVbA'},
   {name: 'Super Ubie Island', engine: CONSTRUCT2, releaseDate: {d: 15, m: 1, y: 2016}, imgId: 'superubieisland', yt: 'd41yEc3CGoQ'},
   {name: 'Far Cry', engine: CRYENGINE1, releaseDate: {d: 23, m: 3, y: 2004}, imgId: 'farcry', yt: '_rFi_FdtJ6k'},
-  {name: 'The Escapist', engine: CLICK_TEAM_FUSION, releaseDate: {d: 13, m: 2, y: 2015}, imgId: 'The-Escapists', yt: 'ixeHjuPKlUU'}, // https://community.clickteam.com/content/224-The-Escapists-Kickstarter-Launched
+  {name: 'The Escapists', engine: CLICK_TEAM_FUSION, releaseDate: {d: 13, m: 2, y: 2015}, imgId: 'The-Escapists', yt: 'ixeHjuPKlUU'}, // https://community.clickteam.com/content/224-The-Escapists-Kickstarter-Launched
   {name: 'Arma 3', engine: REAL_VIRTUALITY_4, releaseDate: {d: 12, m: 9, y: 2013}, imgId: 'arma3', yt: 'M1YBZUxMX8g'}, // https://arma3.com/features/engine
   {name: 'Argo', engine: REAL_VIRTUALITY_4, releaseDate: {d: 22, m: 6, y: 2017}, imgId: 'argo', yt: '459VNYwtuS4'}, // Basiert auf Arma 3
   {name: 'Playerunknown\'s Battlegrounds', engine: UNREAL4, releaseDate: {d: 23, m: 3, y: 2017}, imgId: 'PUBG', yt: 'ODWCbu_cuqk'},
@@ -150,5 +151,6 @@ GAMES = [
   {name: 'Grand Theft Auto: Vice City', engine: RENDERWARE, releaseDate: {d: 27, m: 10, y: 2002}, imgId: 'gta-vc', yt: 'MpmDawqOfqs'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City
   {name: 'Grand Theft Auto: San Andreas', engine: RENDERWARE, releaseDate: {d: 26, m: 10, y: 2004}, imgId: 'gta-sa', yt: 'u_CbHrBbHNQ'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas
   {name: 'Grand Theft Auto IV', engine: RAGE, releaseDate: {d: 29, m: 4, y: 2008}, imgId: 'gta-4', yt: 'M80K51DosFo'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto_IV
-  {name: 'Grand Theft Auto V', engine: RAGE, releaseDate: {d: 17, m: 9, y: 2013}, imgId: 'gta-5', yt: 'QkkoHAzjnUs'} // https://de.wikipedia.org/wiki/Grand_Theft_Auto_V
+  {name: 'Grand Theft Auto V', engine: RAGE, releaseDate: {d: 17, m: 9, y: 2013}, imgId: 'gta-5', yt: 'QkkoHAzjnUs'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto_V
+  {name: 'Geometry Dash', engine: COCOS2DX, releaseDate: {d: 2, m: 8, y: 2013}, imgId: 'geometrydash', yt: 'ELeCcv11zXE'}
 ]
