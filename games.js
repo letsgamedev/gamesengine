@@ -62,6 +62,8 @@ var UNREAL4 = 'Unreal Engine 4'
 var XNA = 'Microsoft XNA'
 
 GAMES = [
+  {name: 'Counter-Strike', engine: GOLD_SRC, releaseDate: {d: 8, m: 11, y: 2000}, imgId: 'counter-strike', yt: 'sdBjDSczgKY'}, //https://de.wikipedia.org/wiki/Counter-Strike
+  {name: 'Counter-Strike: Condition Zero', engine: GOLD_SRC, releaseDate: {d: 1, m: 3, y: 2004}, imgId: 'counter-strike-condition-zero', yt: 'sdBjDSczgKY'}, //https://de.wikipedia.org/wiki/Counter-Strike
     {name: 'Scrap Mechanic', engine: OWN_ENGINE, releaseDate: {d: 19, m: 1, y: 2016}, imgId: 'scrap-mechanic', yt: '5kjBuCK_ZKM'}, // http://www.scrapmechanic.com/news/devblog-8-is-here/
     {name: 'Fernbus Simulator', engine: UNREAL4, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'fernbus-simulator', yt: 'GvngaKeCO2k'}, // http://store.steampowered.com/app/427100/Fernbus_Simulator/?l=german
     {name: 'Minecraft Pocket Edition', engine: OPENGLES, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'minecraft-pe', yt: 'X-fMtNOS_gU'}, // https://www.quora.com/Was-Minecraft-PE-developed-using-OpenGL-ES-or-a-third-party-game-engine-like-Unity - http://minecraft-de.gamepedia.com/Pocket_Edition
