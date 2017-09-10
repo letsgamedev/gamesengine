@@ -24,6 +24,7 @@ imgId: Der Name des dementsprechenden Bildes im 'img/' order der Seite
 var CLICK_TEAM_FUSION = 'Clickteam Fusion 2.5'
 var COBRA_ENGINE = 'Cobra'
 var COCOS2D = 'Cocos2D'
+var COCOS2DX = 'Cocos2D-x'
 var CONSTRUCT2 = 'Construct 2'
 var CREATION_ENGINE = 'Creation-Engine'
 var CRYENGINE1 = 'CryEngine 1'
@@ -47,13 +48,14 @@ var MONOGAME = 'MonoGame'
 var OWN_ENGINE = 'Own Engine'
 var OPENGLES = 'OpenGL ES'
 var PHASERJS = 'Phaser.js'
+var RAGE = "Rockstar Advanced Game Engine"
 var REAL_VIRTUALITY_4 = 'Real Virtuality 4'
 var RED_ENGINE = 'REDengine 2/3/4'
+var RENDERWARE = 'RenderWare'
 var SERIOUS4 = 'Serious Engine 4'
 var SOURCE = 'Source Engine'
 var SOURCE2 = 'Source 2'
 var UNITY = 'Unity'
-var UNITY5 = "Unity 5"
 var UNREAL2_5 = 'Unreal Engine 2.5'
 var UNREAL3 = 'Unreal Engine 3'
 var UNREAL4 = 'Unreal Engine 4'
@@ -62,9 +64,14 @@ var ANVILNEXT = 'AnvilNext'
 
 
 GAMES = [
-  {name: 'Kingdom: Classic', engine: UNITY5, releaseDate: {d: 21, m: 10, y: 2015}, imgId: 'kingdom_classic', yt: 'NeHPF5i6L2c'}, //http://www.kingdomthegame.com/ //https://steamcommunity.com/app/368230/discussions/0/483368526581338634/ //image: http://vignette2.wikia.nocookie.net/kingdomthegame/images/b/b5/Kingdom_2_13_2016_10_09_48_PM.png/revision/latest?cb=20160809143623
-  {name: 'Assassin’s Creed Unity', engine: ANVILNEXT, releaseDate: {d: 11, m: 11, y: 2014}, imgId: 'Assassins-Creed-Unity', yt: 'XNS9T6tGTUs'}, //https://de.wikipedia.org/wiki/Anvil_(Spiel-Engine) //https://de.wikipedia.org/wiki/Assassin’s_Creed_Unity //Image: http://gameluster.com/wp-content/uploads/2015/02/Assassins-Creed-Unity.jpg
+  {name: 'Kingdom: Classic', engine: UNITY, releaseDate: {d: 21, m: 10, y: 2015}, imgId: 'kingdom_classic', yt: 'NeHPF5i6L2c'}, //http://www.kingdomthegame.com/ //https://steamcommunity.com/app/368230/discussions/0/483368526581338634/ //image: http://vignette2.wikia.nocookie.net/kingdomthegame/images/b/b5/Kingdom_2_13_2016_10_09_48_PM.png/revision/latest?cb=20160809143623
+  {name: 'Assassin’s Creed', engine: ANVILNEXT, releaseDate: {d: 11, m: 11, y: 2014}, imgId: 'Assassins-Creed-Unity', yt: 'XNS9T6tGTUs'}, //https://de.wikipedia.org/wiki/Anvil_(Spiel-Engine) //https://de.wikipedia.org/wiki/Assassin’s_Creed_Unity //Image: http://gameluster.com/wp-content/uploads/2015/02/Assassins-Creed-Unity.jpg
   {name: 'Assassin’s Creed IV: Black Flag', engine: ANVILNEXT, releaseDate: {d: 29, m: 10, y: 2013}, imgId: 'assassins-creed-iv-black-flag', yt: 'SMTj3J4H6Gk'}, //https://de.wikipedia.org/wiki/Anvil_(Spiel-Engine) //https://de.wikipedia.org/wiki/Assassin’s_Creed_IV:_Black_Flag    //image: http://www.sohood.com/wp-content/uploads/2013/07/assassins-creed-4-black-flag-pirate-naval-exploration-gameplay.jpg
+  {name: 'Scrap Mechanic', engine: OWN_ENGINE, releaseDate: {d: 19, m: 1, y: 2016}, imgId: 'scrap-mechanic', yt: '5kjBuCK_ZKM'}, // http://www.scrapmechanic.com/news/devblog-8-is-here/
+  {name: 'Fernbus Simulator', engine: UNREAL4, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'fernbus-simulator', yt: 'GvngaKeCO2k'}, // http://store.steampowered.com/app/427100/Fernbus_Simulator/?l=german
+  {name: 'Minecraft Pocket Edition', engine: OPENGLES, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'minecraft-pe', yt: 'X-fMtNOS_gU'}, // https://www.quora.com/Was-Minecraft-PE-developed-using-OpenGL-ES-or-a-third-party-game-engine-like-Unity - http://minecraft-de.gamepedia.com/Pocket_Edition
+  {name: 'Counter-Strike', engine: GOLD_SRC, releaseDate: {d: 8, m: 11, y: 2000}, imgId: 'counter-strike', yt: 'sdBjDSczgKY'}, //https://de.wikipedia.org/wiki/Counter-Strike
+  {name: 'Counter-Strike: Condition Zero', engine: GOLD_SRC, releaseDate: {d: 1, m: 3, y: 2004}, imgId: 'counter-strike-condition-zero', yt: 'sdBjDSczgKY'}, //https://de.wikipedia.org/wiki/Counter-Strike
   {name: 'Scrap Mechanic', engine: OWN_ENGINE, releaseDate: {d: 19, m: 1, y: 2016}, imgId: 'scrap-mechanic', yt: '5kjBuCK_ZKM'}, // http://www.scrapmechanic.com/news/devblog-8-is-here/
   {name: 'Fernbus Simulator', engine: UNREAL4, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'fernbus-simulator', yt: 'GvngaKeCO2k'}, // http://store.steampowered.com/app/427100/Fernbus_Simulator/?l=german
   {name: 'Minecraft Pocket Edition', engine: OPENGLES, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'minecraft-pe', yt: 'X-fMtNOS_gU'}, // https://www.quora.com/Was-Minecraft-PE-developed-using-OpenGL-ES-or-a-third-party-game-engine-like-Unity - http://minecraft-de.gamepedia.com/Pocket_Edition
@@ -94,7 +101,7 @@ GAMES = [
   {name: 'Minecraft', engine: LWJGL, releaseDate: {d: 17, m: 5, y: 2009}, imgId: 'minecraft', yt: 'MmB9b5njVbA'},
   {name: 'Super Ubie Island', engine: CONSTRUCT2, releaseDate: {d: 15, m: 1, y: 2016}, imgId: 'superubieisland', yt: 'd41yEc3CGoQ'},
   {name: 'Far Cry', engine: CRYENGINE1, releaseDate: {d: 23, m: 3, y: 2004}, imgId: 'farcry', yt: '_rFi_FdtJ6k'},
-  {name: 'The Escapist', engine: CLICK_TEAM_FUSION, releaseDate: {d: 13, m: 2, y: 2015}, imgId: 'The-Escapists', yt: 'ixeHjuPKlUU'}, // https://community.clickteam.com/content/224-The-Escapists-Kickstarter-Launched
+  {name: 'The Escapists', engine: CLICK_TEAM_FUSION, releaseDate: {d: 13, m: 2, y: 2015}, imgId: 'The-Escapists', yt: 'ixeHjuPKlUU'}, // https://community.clickteam.com/content/224-The-Escapists-Kickstarter-Launched
   {name: 'Arma 3', engine: REAL_VIRTUALITY_4, releaseDate: {d: 12, m: 9, y: 2013}, imgId: 'arma3', yt: 'M1YBZUxMX8g'}, // https://arma3.com/features/engine
   {name: 'Argo', engine: REAL_VIRTUALITY_4, releaseDate: {d: 22, m: 6, y: 2017}, imgId: 'argo', yt: '459VNYwtuS4'}, // Basiert auf Arma 3
   {name: 'Playerunknown\'s Battlegrounds', engine: UNREAL4, releaseDate: {d: 23, m: 3, y: 2017}, imgId: 'PUBG', yt: 'ODWCbu_cuqk'},
@@ -149,5 +156,11 @@ GAMES = [
   {name: 'Fifa 16', engine: IGNITE, releaseDate: {d: 22, m: 9, y: 2015}, imgId: 'fifa16', yt: 'bwz98athxQ8'}, 
   {name: 'Fifa 17', engine: FROSTBITE, releaseDate: {d: 27, m: 9 , y: 2016}, imgId: 'fifa17', yt: 'yYjD78X1d9Q'}, 
   {name: 'Fifa 18', engine: FROSTBITE, releaseDate: {d: 29, m: 9, y: 2017}, imgId: 'fifa18', yt: 'z_7Gz_RFLnE'}, 
-  {name: 'League of Legends', engine: OWN_ENGINE, releaseDate: {d: 27, m: 10, y: 2009}, imgId: 'league-of-legends', yt: 'cXZqfuJ9Zps'} 
+  {name: 'League of Legends', engine: OWN_ENGINE, releaseDate: {d: 27, m: 10, y: 2009}, imgId: 'league-of-legends', yt: 'cXZqfuJ9Zps'},
+  {name: 'Grand Theft Auto III', engine: RENDERWARE, releaseDate: {d: 22, m: 10, y: 2001}, imgId: 'gta-3', yt: 'lCyiW882D7U'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto_III
+  {name: 'Grand Theft Auto: Vice City', engine: RENDERWARE, releaseDate: {d: 27, m: 10, y: 2002}, imgId: 'gta-vc', yt: 'MpmDawqOfqs'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto:_Vice_City
+  {name: 'Grand Theft Auto: San Andreas', engine: RENDERWARE, releaseDate: {d: 26, m: 10, y: 2004}, imgId: 'gta-sa', yt: 'u_CbHrBbHNQ'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas
+  {name: 'Grand Theft Auto IV', engine: RAGE, releaseDate: {d: 29, m: 4, y: 2008}, imgId: 'gta-4', yt: 'M80K51DosFo'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto_IV
+  {name: 'Grand Theft Auto V', engine: RAGE, releaseDate: {d: 17, m: 9, y: 2013}, imgId: 'gta-5', yt: 'QkkoHAzjnUs'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto_V
+  {name: 'Geometry Dash', engine: COCOS2DX, releaseDate: {d: 2, m: 8, y: 2013}, imgId: 'geometrydash', yt: 'ELeCcv11zXE'}
 ]
