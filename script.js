@@ -167,7 +167,6 @@ Vue.component('engine-link', {
         case SOURCE: return 'https://de.wikipedia.org/wiki/Source_Engine'
         case SOURCE2: return 'http://de.valve.wikia.com/wiki/Source_2_Engine'
         case UNITY: return 'https://unity3d.com'
-        case UNITY5: return 'https://unity3d.com'
         case UNREAL2_5: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
         case UNREAL3: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
         case UNREAL4: return 'https://www.unrealengine.com/what-is-unreal-engine-4'
