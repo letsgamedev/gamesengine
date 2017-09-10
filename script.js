@@ -135,6 +135,7 @@ Vue.component('engine-link', {
         case CLICK_TEAM_FUSION: return 'http://www.clickteam.com/clickteam-fusion-2-5'
         case COBRA_ENGINE: return 'https://www.frontier.co.uk/node/639'
         case COCOS2D: return 'http://cocos2d.org/'
+        case COCOS2DX: return 'http://www.cocos2d-x.org/'
         case CONSTRUCT2: return 'https://www.scirra.com/'
         case CREATION_ENGINE: return 'https://en.wikipedia.org/wiki/Creation_Engine'
         case CRYENGINE1: return 'https://www.cryengine.com/'
