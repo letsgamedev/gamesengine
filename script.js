@@ -122,13 +122,16 @@ Vue.component('table-entry', {
 Vue.component('engine-link', {
   props: ['name'],
   template: `
-    <span><a :href=getLink(name) target="_blank">{{name}}</a> </br> <i @click="search()" class="fa fa-search fa-1 engineSearchIcon"></i></span>
-  `,
+    <div>
+    <div v-if="typeof name === 'object'"><span v-for="(value, key) in name"><a :href=getLink(value) target="_blank">{{value}} ({{key}})</a> <i @click="search(value)" class="fa fa-search fa-1 engineSearchIcon"></i><br></span></div>
+    <span v-else><a :href=getLink(name) target="_blank">{{name}}</a> <i @click="search()" class="fa fa-search fa-1 engineSearchIcon"></i></span>
+    </div>
+`,
 
   methods: {
-    search: function() {
-      console.log("ji", this.name)
-      this.$root.searchQuery = this.name
+    search: function(s) {
+      console.log("ji", s,this.name)
+      this.$root.searchQuery = s ? s : this.name
     },
     getLink (v) {
       switch (v) {
