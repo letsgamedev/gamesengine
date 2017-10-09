@@ -1,7 +1,7 @@
 body {
-	   margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 50px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 50px;
 }
 
 .searchbar {
@@ -13,10 +13,10 @@ body {
 }
 
 .engineSearchIcon {
-	  font-size: 15px;
-    vertical-align: baseline;
-    color: #efefef;
-    cursor: pointer;
+	font-size: 15px;
+	vertical-align: baseline;
+	color: #dedede;
+	cursor: pointer;
 }
 
 .modal-content {
@@ -28,9 +28,9 @@ body {
 	top: 20px;
 	right: 20px;
 	width: 180px;
-
+	
 	border-bottom: solid 0px black; 
-
+	
 	transition: all 0,5s;
 }
 .patreon:hover {
@@ -42,6 +42,10 @@ td {
 	vertical-align: middle !important;
 }
 
+th {
+	cursor: pointer;
+}
+
 a {
 	color: #ff2b56 !important;
 }
@@ -51,11 +55,10 @@ a {
 }
 
 html {
-	    max-width: 1000px;
-    margin: auto;
+	max-width: 1000px;
+	margin: auto;
 }
 
-table img
-{
+table img {
 	cursor: pointer;
 }

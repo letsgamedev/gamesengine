@@ -5,19 +5,19 @@
 Hier werden neue Spiele eingetragen.
 Jedes Spiel besteht aus folgenden Informationen:
 name: Der Name des Spiels
-engine: Eine der unten aufgeführten Eingines.
+engine: Eine der unten aufgeführten Engines.
   Sollte die Engine nicht bei sein, füge sie einfach hinzu.
 releaseDate: Wann kam das Spiel ursprünglich raus?
  variante 1: {d: 11, m: 4, y: 2017} für bekanntes Datum
  variante 2: {q: 4, y: 2017} für noch nicht genau bekanntes Datum
-imgId: Der Name des dementsprechenden Bildes im 'img/' order der Seite
-  heißt der Pfad 'img/zuzu-land.jpg' dann trage 'zuzu-land' ein.
-  Das Bild muss ein jpg sein
- yt: Die id des YouTube Videos.
-   Das ist ein normaler YouTube Link: https://www.youtube.com/watch?v=f8Nl1O-eDGk
-   Die ID ist in dem fall f8Nl1O-eDGk
+imgId: Der Name des entsprechenden Bildes im 'img/' Ordenr der Seite
+  Heißt der Pfad 'img/zuzu-land.jpg', dann trage 'zuzu-land' ein.
+  Das Bild muss ein jpg sein.
+ yt: Die ID des YouTube-Videos.
+   Das ist ein normaler YouTube-Link: https://www.youtube.com/watch?v=f8Nl1O-eDGk
+   Die ID ist in dem Fall f8Nl1O-eDGk.
    Das ist ein anderer Link mit doofen Zusatzinfos: https://www.youtube.com/watch?v=f8Nl1O-eDGk&feature=youtu.be&t=1s
-   Da musst du aufpassen nur die ID zu erwischen (Nach dem v= bis zum ersten &)
+   Da musst du aufpassen, nur die ID zu erwischen. (Nach dem v= bis zum ersten &)
 */
 
 // ENGINES
@@ -72,9 +72,6 @@ GAMES = [
   {name: 'Minecraft Pocket Edition', engine: OPENGLES, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'minecraft-pe', yt: 'X-fMtNOS_gU'}, // https://www.quora.com/Was-Minecraft-PE-developed-using-OpenGL-ES-or-a-third-party-game-engine-like-Unity - http://minecraft-de.gamepedia.com/Pocket_Edition
   {name: 'Counter-Strike', engine: GOLD_SRC, releaseDate: {d: 8, m: 11, y: 2000}, imgId: 'counter-strike', yt: 'sdBjDSczgKY'}, //https://de.wikipedia.org/wiki/Counter-Strike
   {name: 'Counter-Strike: Condition Zero', engine: GOLD_SRC, releaseDate: {d: 1, m: 3, y: 2004}, imgId: 'counter-strike-condition-zero', yt: 'sdBjDSczgKY'}, //https://de.wikipedia.org/wiki/Counter-Strike
-  {name: 'Scrap Mechanic', engine: OWN_ENGINE, releaseDate: {d: 19, m: 1, y: 2016}, imgId: 'scrap-mechanic', yt: '5kjBuCK_ZKM'}, // http://www.scrapmechanic.com/news/devblog-8-is-here/
-  {name: 'Fernbus Simulator', engine: UNREAL4, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'fernbus-simulator', yt: 'GvngaKeCO2k'}, // http://store.steampowered.com/app/427100/Fernbus_Simulator/?l=german
-  {name: 'Minecraft Pocket Edition', engine: OPENGLES, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'minecraft-pe', yt: 'X-fMtNOS_gU'}, // https://www.quora.com/Was-Minecraft-PE-developed-using-OpenGL-ES-or-a-third-party-game-engine-like-Unity - http://minecraft-de.gamepedia.com/Pocket_Edition
   {name: 'Mass Effect: Andromeda', engine: FROSTBITE, releaseDate: {d: 23, m: 3, y: 2017}, imgId: 'MEAndromeda', yt: '4Q5gea3iS40'},
   {name: 'Mass Effect', engine: UNREAL3, releaseDate: {d: 16, m: 11, y: 2007}, imgId: 'ME1', yt: '-_6ZMr2bMco'},
   {name: 'Mass Effect 2', engine: UNREAL3, releaseDate: {d: 26, m: 1, y: 2010}, imgId: 'ME2', yt: 'L5c05XSGp5w'},
