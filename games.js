@@ -10,7 +10,7 @@ engine: Eine der unten aufgeführten Engines.
 releaseDate: Wann kam das Spiel ursprünglich raus?
  variante 1: {d: 11, m: 4, y: 2017} für bekanntes Datum
  variante 2: {q: 4, y: 2017} für noch nicht genau bekanntes Datum
-imgId: Der Name des entsprechenden Bildes im 'img/' Ordenr der Seite
+imgId: Der Name des entsprechenden Bildes im 'img/' Ordner der Seite
   Heißt der Pfad 'img/zuzu-land.jpg', dann trage 'zuzu-land' ein.
   Das Bild muss ein jpg sein.
  yt: Die ID des YouTube-Videos.
