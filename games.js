@@ -92,6 +92,7 @@ GAMES = [
   {name: 'Portal 2', engine: SOURCE, releaseDate: {d: 19, m: 4, y: 2011}, imgId: 'portal2', yt: 'tax4e4hBBZc'},
   {name: 'Dauntless', engine: UNREAL4, releaseDate: {q: 4, y: 2017}, imgId: 'dauntless', yt: 'xOMq_luhZoA'},
   {name: 'Nidhogg', engine: GAME_MAKER1, releaseDate: {d: 13, m: 1, y: 2014}, imgId: 'nidhogg', yt: 'TaOocHXMhlU'},
+  {name: 'Nidhogg 2', engine: GAME_MAKER1, releaseDate: {d: 15, m: 8, y: 2017}, imgId: 'nidhogg2B', yt: 'ZrAkPDSTLIc'},
   {name: 'Yooka-Laylee', engine: UNITY, releaseDate: {d: 11, m: 4, y: 2017}, imgId: 'yooka-laylee', yt: 'R57JwzXartU'},
   {name: 'Stardew Valley', engine: XNA, releaseDate: {d: 26, m: 2, y: 2016}, imgId: 'stardew-valley', yt: 'ot7uXNQskhs'},
   {name: 'Undertale', engine: GAME_MAKER1, releaseDate: {d: 15, m: 9, y: 2015}, imgId: 'undertale', yt: '1Hojv0m3TqA'},
