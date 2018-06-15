@@ -63,6 +63,7 @@ var UNITY = 'Unity'
 var UNREAL2_5 = 'Unreal Engine 2.5'
 var UNREAL3 = 'Unreal Engine 3'
 var UNREAL4 = 'Unreal Engine 4'
+var VISION = "Havok Vision"
 var XNA = 'Microsoft XNA'
 var ANVILNEXT = 'AnvilNext'
 
@@ -171,5 +172,7 @@ GAMES = [
   {name: 'Grand Theft Auto: San Andreas', engine: RENDERWARE, releaseDate: {d: 26, m: 10, y: 2004}, imgId: 'gta-sa', yt: 'u_CbHrBbHNQ'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto:_San_Andreas
   {name: 'Grand Theft Auto IV', engine: RAGE, releaseDate: {d: 29, m: 4, y: 2008}, imgId: 'gta-4', yt: 'M80K51DosFo'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto_IV
   {name: 'Grand Theft Auto V', engine: RAGE, releaseDate: {d: 17, m: 9, y: 2013}, imgId: 'gta-5', yt: 'QkkoHAzjnUs'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto_V
-  {name: 'Geometry Dash', engine: COCOS2DX, releaseDate: {d: 2, m: 8, y: 2013}, imgId: 'geometrydash', yt: 'ELeCcv11zXE'}
+  {name: 'Geometry Dash', engine: COCOS2DX, releaseDate: {d: 2, m: 8, y: 2013}, imgId: 'geometrydash', yt: 'ELeCcv11zXE'},
+  {name: 'Stronghold 3', engine: VISION, releaseDate: {d: 25, m: 10, y: 2011}, imgId: 'stronghold3', yt: 'yoivBzNbhzI'}, // https://de.wikipedia.org/wiki/Stronghold_3
+  {name: 'Stronghold Crusader 2', engine: VISION, releaseDate: {d: 23, m: 9, y: 2014}, imgId: 'strongholdcrusader2', yt: 'dGfswGVEo0E'} // https://de.wikipedia.org/wiki/Stronghold_Crusader_2
 ]
