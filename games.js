@@ -171,5 +171,6 @@ GAMES = [
   {name: 'Grand Theft Auto V', engine: RAGE, releaseDate: {d: 17, m: 9, y: 2013}, imgId: 'gta-5', yt: 'QkkoHAzjnUs'}, // https://de.wikipedia.org/wiki/Grand_Theft_Auto_V
   {name: 'Geometry Dash', engine: COCOS2DX, releaseDate: {d: 2, m: 8, y: 2013}, imgId: 'geometrydash', yt: 'ELeCcv11zXE'},
   {name: 'Stronghold 3', engine: VISION, releaseDate: {d: 25, m: 10, y: 2011}, imgId: 'stronghold3', yt: 'yoivBzNbhzI'}, // https://de.wikipedia.org/wiki/Stronghold_3
-  {name: 'Stronghold Crusader 2', engine: VISION, releaseDate: {d: 23, m: 9, y: 2014}, imgId: 'strongholdcrusader2', yt: 'dGfswGVEo0E'} // https://de.wikipedia.org/wiki/Stronghold_Crusader_2
+  {name: 'Stronghold Crusader 2', engine: VISION, releaseDate: {d: 23, m: 9, y: 2014}, imgId: 'strongholdcrusader2', yt: 'dGfswGVEo0E'}, // https://de.wikipedia.org/wiki/Stronghold_Crusader_2
+  {name: 'Octopath Traveler', engine: UNREAL4, releaseDate: {d: 13, m: 7, y: 2018}, imgId: 'octopathtraveler', yt: 'G2lwxuOk2FY'}
 ]
