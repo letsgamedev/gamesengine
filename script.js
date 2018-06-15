@@ -135,6 +135,10 @@ Vue.component('engine-link', {
     },
     getLink (v) {
       switch (v) {
+        case SCIMITAR: 
+        case ANVIL:
+        case ANVIL_NEXT: 
+        case ANVIL_NEXT_2: return 'https://de.wikipedia.org/wiki/Anvil_(Spiel-Engine)'
         case CLICK_TEAM_FUSION: return 'http://www.clickteam.com/clickteam-fusion-2-5'
         case COBRA_ENGINE: return 'https://www.frontier.co.uk/node/639'
         case COCOS2D: return 'http://cocos2d.org/'

@@ -21,6 +21,10 @@ imgId: Der Name des dementsprechenden Bildes im 'img/' order der Seite
 */
 
 // ENGINES
+var SCIMITAR = 'Scimitar'
+var ANVIL = 'Anvil'
+var ANVIL_NEXT = 'AnvilNext'
+var ANVIL_NEXT_2 = 'AnvilNext 2.0'
 var CLICK_TEAM_FUSION = 'Clickteam Fusion 2.5'
 var COBRA_ENGINE = 'Cobra'
 var COCOS2D = 'Cocos2D'
@@ -64,12 +68,16 @@ var ANVILNEXT = 'AnvilNext'
 
 
 GAMES = [
+  {name: 'Assassin\'s Creed', engine: SCIMITAR, releaseDate: {d: 13, m: 11, y: 2007}, imgId: 'assassins-creed' , yt: 'EfAL15MH12Q'}, //Jeweils das erste veröffentlichungsdatum in Europa. Quelle: Wikipedia (gilt für alle Teile der Reihe)
+  {name: 'Assassin\'s Creed II', engine: ANVIL, releaseDate: {d: 20, m: 11, y: 2009}, imgId: 'assassins-creed-2', yt: 'RaOPz5QLa60'},
+  {name: 'Assassin\'s Creed: Brotherhood', engine: ANVIL, releaseDate: {d: 19, m: 11, y: 2010}, imgId: 'assassins-creed-brotherhood' , yt: 'sNviW5Nj8Eo'},
+  {name: 'Assassin\'s Creed: Revelations', engine: ANVIL, releaseDate: {d: 15, m: 11, y: 2011}, imgId: 'assassins-creed-revelations', yt: '8-Ixo7QXw_E'},
+  {name: 'Assassin\'s Creed III', engine: ANVIL_NEXT, releaseDate: {d: 31, m: 10, y: 2012}, imgId: 'assassins-creed-3', yt: 'ayCZh3cVofY'},
+  {name: 'Assassin\'s Creed IV: Black Flag', engine: ANVIL_NEXT, releaseDate: {d: 29, m: 10, y: 2013}, imgId: 'assassins-creed-4', yt: 'qNCPc66NcpE'},
+  {name: 'Assassin\'s Creed Rogue', engine: ANVIL_NEXT, releaseDate: {d: 13 , m: 11, y: 2014}, imgId: 'assassins-creed-rogue', yt: 'Da6TZCPODy8'},
+  {name: 'Assassin\'s Creed Unity', engine: ANVIL_NEXT_2, releaseDate: {d: 13, m: 11, y: 2014}, imgId: 'assassins-creed-unity', yt: 'EPghYEmAakY'},
+  {name: 'Assassin\'s Creed Syndicate', engine: ANVIL_NEXT_2, releaseDate: {d: 23, m: 10, y: 2015}, imgId: 'assassins-creed-syndicate', yt: '7D-lXhGoy7A'},
   {name: 'Kingdom: Classic', engine: UNITY, releaseDate: {d: 21, m: 10, y: 2015}, imgId: 'kingdom_classic', yt: 'NeHPF5i6L2c'}, //http://www.kingdomthegame.com/ //https://steamcommunity.com/app/368230/discussions/0/483368526581338634/ //image: http://vignette2.wikia.nocookie.net/kingdomthegame/images/b/b5/Kingdom_2_13_2016_10_09_48_PM.png/revision/latest?cb=20160809143623
-  {name: 'Assassin’s Creed', engine: ANVILNEXT, releaseDate: {d: 11, m: 11, y: 2014}, imgId: 'Assassins-Creed-Unity', yt: 'XNS9T6tGTUs'}, //https://de.wikipedia.org/wiki/Anvil_(Spiel-Engine) //https://de.wikipedia.org/wiki/Assassin’s_Creed_Unity //Image: http://gameluster.com/wp-content/uploads/2015/02/Assassins-Creed-Unity.jpg
-  {name: 'Assassin’s Creed IV: Black Flag', engine: ANVILNEXT, releaseDate: {d: 29, m: 10, y: 2013}, imgId: 'assassins-creed-iv-black-flag', yt: 'SMTj3J4H6Gk'}, //https://de.wikipedia.org/wiki/Anvil_(Spiel-Engine) //https://de.wikipedia.org/wiki/Assassin’s_Creed_IV:_Black_Flag    //image: http://www.sohood.com/wp-content/uploads/2013/07/assassins-creed-4-black-flag-pirate-naval-exploration-gameplay.jpg
-  {name: 'Scrap Mechanic', engine: OWN_ENGINE, releaseDate: {d: 19, m: 1, y: 2016}, imgId: 'scrap-mechanic', yt: '5kjBuCK_ZKM'}, // http://www.scrapmechanic.com/news/devblog-8-is-here/
-  {name: 'Fernbus Simulator', engine: UNREAL4, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'fernbus-simulator', yt: 'GvngaKeCO2k'}, // http://store.steampowered.com/app/427100/Fernbus_Simulator/?l=german
-  {name: 'Minecraft Pocket Edition', engine: OPENGLES, releaseDate: {d: 25, m: 8, y: 2016}, imgId: 'minecraft-pe', yt: 'X-fMtNOS_gU'}, // https://www.quora.com/Was-Minecraft-PE-developed-using-OpenGL-ES-or-a-third-party-game-engine-like-Unity - http://minecraft-de.gamepedia.com/Pocket_Edition
   {name: 'Counter-Strike', engine: GOLD_SRC, releaseDate: {d: 8, m: 11, y: 2000}, imgId: 'counter-strike', yt: 'sdBjDSczgKY'}, //https://de.wikipedia.org/wiki/Counter-Strike
   {name: 'Counter-Strike: Condition Zero', engine: GOLD_SRC, releaseDate: {d: 1, m: 3, y: 2004}, imgId: 'counter-strike-condition-zero', yt: 'sdBjDSczgKY'}, //https://de.wikipedia.org/wiki/Counter-Strike
   {name: 'Scrap Mechanic', engine: OWN_ENGINE, releaseDate: {d: 19, m: 1, y: 2016}, imgId: 'scrap-mechanic', yt: '5kjBuCK_ZKM'}, // http://www.scrapmechanic.com/news/devblog-8-is-here/
