@@ -1,15 +1,36 @@
 body {
 	margin-left: 50px;
 	margin-right: 50px;
-	margin-top: 50px;
+	margin-top: 10px;
+}
+
+.navbar-item {
+	font-size: 25px;
+	border-right: 2px solid #eee;
+}
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+nav {
+	margin-bottom: 20px; 
 }
 
 .searchbar {
 	margin-bottom: 10px;
 }
 
-.headLine {
-	color: #ff2b56;
+.headline {
+	color: #2cb0ff;
+}
+
+.lgd-color {
+	color: #2cb0ff;
 }
 
 .engineSearchIcon {
@@ -47,7 +68,7 @@ th {
 }
 
 a {
-	color: #ff2b56 !important;
+	color: #2cb0ff !important;
 }
 
 .screenshot {

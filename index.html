@@ -3,31 +3,78 @@
 <head>
 	<title>Games Engine</title>
 	<meta charset="utf-8">
-	<script src="https://use.fontawesome.com/9b6a41aa13.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css" />
+	<!--<script src="https://use.fontawesome.com/9b6a41aa13.js"></script>-->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="bulma.css" />
 		<script src="vue.js"></script>
 		<script src="games.js"></script>
-		
+		<script src="handler.js"></script>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		
 </head>
 <body>
 	<div id="root">
-		<h1 class="title is-1 headLine">Games Engine</h1>
-		<div class="title is-3">{{l.de.instruction}}</div>
-		<div class="columns">
-			<div class="column">
-				<button id="all-button" class="button is-danger" disabled onClick="seeAllGames()">See all</button>
+		<h1 class="title is-1 headline">lets-gamedev.de</h1>
+		<nav class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-brand">
+				<a role="button" id="burger" class="navbar-burger burger" onclick="onBurger()" aria-label="menu" aria-expanded="false" data-target="mainNavBar">
+				  <span aria-hidden="true"></span>
+				  <span aria-hidden="true"></span>
+				  <span aria-hidden="true"></span>
+				</a>
 			</div>
-			<div class="column is-11">
-			  <input name="query" v-model="searchQuery" placeholder="search" class="input searchbar">
+			<div id="mainNavBar" class="navbar-menu">
+				<div class="navbar-start">
+					<a class="navbar-item" onclick="swapTab('home')">Home</a>
+					<a class="navbar-item" onclick="swapTab('games')">Games</a>
+					<a class="navbar-item" onclick="swapTab('engines')">Engines</a>
+					<a class="navbar-item" onclick="swapTab('learn')">Lernen</a>
+					<a class="navbar-item" href="https://discord.gg/PsEVhMC" target="_blank"><i style="margin-right:5px;" class="fab fa-discord"></i>Discord</a>
+				</div>
 			</div>
+		</nav>
+
+		<div id="home">
+			<div class="title is-1 lgd-color">{{l.de.secHome.wellcome}}</div>
+			<p class="is-size-4">{{l.de.secHome.text1}}</p>
 		</div>
-		<game-table :data="games" :head="head" :filter-key="searchQuery"></game-table>
+
+		<!-- Games -->
+		<div id="games">
+			<div class="title is-1 lgd-color">{{l.de.secGames.wellcome}}</div>
+			<p class="is-size-4">{{l.de.secGames.text1}}</p>
+			<hr>
+			<div class="columns">
+				<div class="column">
+					<button id="all-button" class="button is-info" disabled onClick="seeAllGames()">See all</button>
+				</div>
+				<div class="column is-11">
+				  <input name="query" v-model="searchQuery" placeholder="search" class="input searchbar">
+				</div>
+			</div>
+			<game-table :data="games" :head="head" :filter-key="searchQuery"></game-table>
+		</div>
+
+		<!-- Engines -->
+		<div id="engines">
+			<div class="title is-4">{{l.de.engines}}</div>
+			<div class="title is-1 lgd-color">{{l.de.secEngines.wellcome}}</div>
+			<p class="is-size-4">{{l.de.secEngines.text1}}</p>
+		</div>
+
+		<div id="learn">
+			<div class="title is-4">{{l.de.learn}}</div>
+			<div class="title is-1 lgd-color">{{l.de.secLearn.wellcome}}</div>
+			<p class="is-size-4">{{l.de.secLearn.text1}}</p>
+		</div>
+
 		<image-modal></image-modal>
 	</div>
+	<hr>
 	<div>Fehler gefunden? <a href="https://github.com/letsgamedev/gamesengine/issues" target="_blank">Hier klicken!</a></div>
-	<br>
-	<footer>© tom bleek <span class="icon"><a href="http://lets-gamedev.de/" target="_blank"><i class="fa fa-home"></i></a></span></footer>
+	
+	<footer>© tom bleek <span class="icon"><a href="http://tombleek.de/" target="_blank"><i class="fa fa-home"></i></a></span></footer>
 
 	<a href="https://www.patreon.com/bePatron?u=2503538" target="_blank"><img class="patreon" src="img/patreon.png"/></a>
 
